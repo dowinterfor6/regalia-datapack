@@ -1,0 +1,17 @@
+{
+  "sends_telemetry_event": false,
+  "criteria": {
+	  "exist": {
+	    "trigger": "minecraft:location",
+	    "conditions":	{}
+	  }
+  },
+  "requirements": [
+    [
+	    "exist"
+	  ]
+  ],
+  "rewards": {
+    "function": "regalia:logic/login/first"
+  }
+}

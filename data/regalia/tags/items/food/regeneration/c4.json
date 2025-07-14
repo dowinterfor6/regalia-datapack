@@ -1,0 +1,24 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:apple",
+    "minecraft:chorus_fruit",
+    { "id": "alexsmobs:banana", "required": false },
+    { "id": "alexsmobs:boiled_emu_egg", "required": false },
+    { "id": "alexsmobs:kangaroo_meat", "required": false },
+    { "id": "alexsmobs:mosquito_repellent_stew", "required": false },
+    { "id": "betterend:blossom_berry", "required": false },
+    { "id": "betterend:shadow_berry_raw", "required": false },
+    { "id": "betternether:black_apple", "required": false },
+    { "id": "betternether:stalagnate_bowl_apple", "required": false },
+    { "id": "betternether:hook_mushroom_cooked", "required": false },
+    { "id": "biomeswevegone:green_apple", "required": false },
+    { "id": "farmersdelight:cooked_chicken_cuts", "required": false },
+    { "id": "farmersdelight:cooked_cod_slice", "required": false },
+    { "id": "farmersdelight:cooked_mutton_chops", "required": false },
+    { "id": "farmersdelight:cooked_salmon_slice", "required": false },
+    { "id": "farmersdelight:melon_popsicle", "required": false },
+    { "id": "farmersdelight:pumpkin_slice", "required": false },
+    { "id": "yungscavebiomes:prickly_peach", "required": false }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:all_hanging_signs",
+    "#minecraft:banners",
+    "#minecraft:buttons",
+    "#minecraft:replaceable",
+    "#minecraft:signs",
+    "#minecraft:wall_signs",
+    "minecraft:glow_lichen",
+    "minecraft:ladder",
+    "minecraft:lever",
+    "minecraft:redstone_torch",
+    "minecraft:redstone_wall_torch",
+    "minecraft:scaffolding",
+    "minecraft:sculk_vein",
+    "minecraft:soul_torch",
+    "minecraft:soul_wall_torch",
+    "minecraft:tripwire",
+    "minecraft:tripwire_hook",
+    "minecraft:torch",
+    "minecraft:vine",
+    "minecraft:wall_torch"
+  ]
+}

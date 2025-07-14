@@ -1,0 +1,79 @@
+{
+  "hidden": true,
+  "type": "origins:multiple",
+  "none": {
+    "type": "origins:action_on_item_use",
+    "trigger": "finish",
+    "priority": -99,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/category/none"
+      }
+    },
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function regalia:logic/food/incoming/category/none"
+    }
+  },
+  "drink": {
+    "type": "origins:action_on_item_use",
+    "trigger": "finish",
+    "priority": -99,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/category/drink"
+      }
+    },
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function regalia:logic/food/incoming/category/drink"
+    }
+  },
+  "snack": {
+    "type": "origins:action_on_item_use",
+    "trigger": "finish",
+    "priority": -99,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/category/snack"
+      }
+    },
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function regalia:logic/food/incoming/category/snack"
+    }
+  },
+  "side": {
+    "type": "origins:action_on_item_use",
+    "trigger": "finish",
+    "priority": -99,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/category/side"
+      }
+    },
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function regalia:logic/food/incoming/category/side"
+    }
+  },
+  "meal": {
+    "type": "origins:action_on_item_use",
+    "trigger": "finish",
+    "priority": -99,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/category/meal"
+      }
+    },
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function regalia:logic/food/incoming/category/meal"
+    }
+  }
+}

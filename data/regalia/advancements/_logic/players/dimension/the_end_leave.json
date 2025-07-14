@@ -1,0 +1,20 @@
+{
+  "sends_telemetry_event": false,
+  "parent": "regalia:_logic/root",
+  "criteria": {
+	  "leave": {
+	    "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "from": "minecraft:the_end"
+      }
+	  }
+  },
+  "requirements": [
+    [
+	    "leave"
+	  ]
+  ],
+  "rewards": {
+    "function": "regalia:logic/players/dimension/the_end_leave"
+  }
+}

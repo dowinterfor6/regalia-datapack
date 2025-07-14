@@ -1,0 +1,69 @@
+{
+  "name": "We All Burn Together",
+  "description": "Whilst on Fire, but also not immune to Fire damage, you gain a 100% Attack Damage buff.",
+  "type": "origins:multiple",
+  "t1": {
+    "type": "origins:conditioned_attribute",
+    "tick_rate": 5,
+    "modifiers": [
+      {
+        "attribute": "minecraft:generic.attack_damage",
+        "operation": "multiply_total",
+        "value": 1.0
+      }
+    ],
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:on_fire"
+        },
+        {
+          "type": "origins:status_effect",
+          "effect": "minecraft:fire_resistance",
+          "inverted": true
+        },
+        {
+          "type": "origins:resource",
+          "resource": "regalia:power/running_hot_data_active",
+          "comparison": "==",
+          "compare_to": 0
+        }
+      ]
+    }
+  },
+  "t2": {
+    "type": "origins:conditioned_attribute",
+    "tick_rate": 5,
+    "modifiers": [
+      {
+        "attribute": "minecraft:generic.attack_damage",
+        "operation": "multiply_total",
+        "value": 2.0
+      }
+    ],
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:on_fire"
+        },
+        {
+          "type": "origins:status_effect",
+          "effect": "minecraft:fire_resistance",
+          "inverted": true
+        },
+        {
+          "type": "origins:resource",
+          "resource": "regalia:power/running_hot_data_active",
+          "comparison": ">=",
+          "compare_to": 1
+        },
+        {
+          "type": "origins:sprinting",
+          "inverted": true
+        }
+      ]
+    }
+  }
+}

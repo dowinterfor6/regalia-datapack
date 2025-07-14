@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "farmersdelight:baked_cod_stew", "required": false },
+    { "id": "farmersdelight:beef_stew", "required": false },
+    { "id": "farmersdelight:chicken_soup", "required": false },
+    { "id": "farmersdelight:fish_stew", "required": false },
+    { "id": "farmersdelight:kelp_roll", "required": false },
+    { "id": "farmersdelight:kelp_roll_slice", "required": false },
+    { "id": "farmersdelight:mushroom_rice", "required": false },
+    { "id": "farmersdelight:noodle_soup", "required": false },
+    { "id": "farmersdelight:pasta_with_meatballs", "required": false },
+    { "id": "farmersdelight:pasta_with_mutton_chop", "required": false },
+    { "id": "farmersdelight:pumpkin_soup", "required": false },
+    { "id": "farmersdelight:roasted_mutton_chops", "required": false },
+    { "id": "farmersdelight:vegetable_soup", "required": false }
+  ]
+}

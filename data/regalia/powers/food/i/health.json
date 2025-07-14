@@ -1,0 +1,169 @@
+{
+  "hidden": true,
+  "type": "origins:multiple",
+  "c0": {
+    "type": "origins:action_on_item_use",
+    "trigger": "finish",
+    "priority": 0,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/health/c0"
+      }
+    },
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function regalia:logic/food/incoming/health/c0"
+    }
+  },
+  "c2": {
+    "type": "origins:action_on_item_use",
+    "trigger": "finish",
+    "priority": 0,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/health/c2"
+      }
+    },
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function regalia:logic/food/incoming/health/c2"
+    }
+  },
+  "c4": {
+    "type": "origins:action_on_item_use",
+    "trigger": "finish",
+    "priority": 0,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/health/c4"
+      }
+    },
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function regalia:logic/food/incoming/health/c4"
+    }
+  },
+  "c6": {
+    "type": "origins:action_on_item_use",
+    "trigger": "finish",
+    "priority": 0,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/health/c6"
+      }
+    },
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function regalia:logic/food/incoming/health/c6"
+    }
+  },
+  "c8": {
+    "type": "origins:action_on_item_use",
+    "trigger": "finish",
+    "priority": 0,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/health/c8"
+      }
+    },
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function regalia:logic/food/incoming/health/c8"
+    }
+  },
+  "c10": {
+    "type": "origins:action_on_item_use",
+    "trigger": "finish",
+    "priority": 0,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/health/c10"
+      }
+    },
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function regalia:logic/food/incoming/health/c10"
+    }
+  },
+  "c12": {
+    "type": "origins:action_on_item_use",
+    "trigger": "finish",
+    "priority": 0,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/health/c12"
+      }
+    },
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function regalia:logic/food/incoming/health/c12"
+    }
+  },
+  "c14": {
+    "type": "origins:action_on_item_use",
+    "trigger": "finish",
+    "priority": 0,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/health/c14"
+      }
+    },
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function regalia:logic/food/incoming/health/c14"
+    }
+  },
+  "c16": {
+    "type": "origins:action_on_item_use",
+    "trigger": "finish",
+    "priority": 0,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/health/c16"
+      }
+    },
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function regalia:logic/food/incoming/health/c16"
+    }
+  },
+  "c18": {
+    "type": "origins:action_on_item_use",
+    "trigger": "finish",
+    "priority": 0,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/health/c18"
+      }
+    },
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function regalia:logic/food/incoming/health/c18"
+    }
+  },
+  "c20": {
+    "type": "origins:action_on_item_use",
+    "trigger": "finish",
+    "priority": 0,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/health/c20"
+      }
+    },
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function regalia:logic/food/incoming/health/c20"
+    }
+  }
+}

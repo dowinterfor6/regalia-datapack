@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "rusticdelight:coffee_braised_beef", "required": false },
+    { "id": "rusticdelight:fried_calamari", "required": false },
+    { "id": "rusticdelight:fried_chicken", "required": false },
+    { "id": "rusticdelight:fried_mushrooms", "required": false }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Human",
+  "description": "Just as simple as that.",
+  "icon": "minecraft:player_head",
+  "powers": [
+    "regalia:human/sprinting",
+    "regalia:human/regeneration",
+    "regalia:human/hunger",
+    "regalia:human/waterfall_swimming",
+    "regalia:food/tooltip",
+    "regalia:food/i/special",
+    "regalia:food/i/category",
+    "regalia:food/i/duration",
+    "regalia:food/i/health",
+    "regalia:food/i/regeneration"
+  ],
+  "order": 0,
+  "impact": 0,
+  "unchoosable": false
+}

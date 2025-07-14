@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "betterend:cave_pumpkin_pie", "required": false },
+    { "id": "farmersdelight:grilled_salmon", "required": false },
+    { "id": "farmersdelight:ratatouille", "required": false },
+    { "id": "farmersdelight:squid_ink_pasta", "required": false },
+    { "id": "farmersdelight:steak_and_potatoes", "required": false },
+    { "id": "farmersdelight:vegetable_noodles", "required": false },
+    { "id": "netherexp:nether_pizza", "required": false },
+    { "id": "netherexp:nether_pizza_slice", "required": false }
+  ]
+}

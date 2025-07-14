@@ -1,0 +1,13 @@
+{
+  "name": "Large",
+  "description": "Not quite the tallest out there.",
+  "icon": "minecraft:glass",
+  "powers": [
+    "regalia:s_large/config",
+    "regalia:s_large/attributes",
+    "regalia:s_large/falling_damage"
+  ],
+  "order": 6,
+  "impact": 0,
+  "unchoosable": false
+}

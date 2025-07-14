@@ -1,0 +1,13 @@
+{
+  "name": "Huge",
+  "description": "You tower over everything like a giant.",
+  "icon": "minecraft:glass",
+  "powers": [
+    "regalia:s_huge/config",
+    "regalia:s_huge/attributes",
+    "regalia:s_huge/falling_damage"
+  ],
+  "order": 7,
+  "impact": 0,
+  "unchoosable": false
+}

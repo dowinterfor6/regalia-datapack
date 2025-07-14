@@ -1,0 +1,57 @@
+{
+  "name": "Surface Tension",
+  "description": "While sprinting, gain the ability to run on water.",
+  "type": "origins:multiple",
+  "data_active": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "start_value": 0
+  },
+  "toggle": {
+    "type": "origins:action_over_time",
+    "interval": 3,
+    "rising_action": {
+      "type": "origins:execute_command",
+      "command": "function regalia:logic/power/surface_tension/enable"
+    },
+    "falling_action": {
+      "type": "origins:execute_command",
+      "command": "function regalia:logic/power/surface_tension/disable"
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:sprinting"
+        },
+        {
+          "type": "origins:on_block"
+        }
+      ]
+    }
+  },
+  "tick_active": {
+    "type": "origins:action_over_time",
+    "interval": 1,
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function regalia:logic/power/surface_tension/tick"
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:sprinting"
+        },
+        {
+          "type": "origins:on_block"
+        },
+        {
+          "type": "origins:swimming",
+          "inverted": true
+        }
+      ]
+    }
+  }
+}

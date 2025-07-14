@@ -1,0 +1,75 @@
+{
+  "name": "Agoraphobia",
+  "description": "The higher you ascend in the world, the weaker your defense gets.",
+  "type": "origins:multiple",
+  "t1": {
+    "type": "origins:conditioned_attribute",
+    "modifiers": [
+      {
+        "attribute": "minecraft:generic.armor_toughness",
+        "operation": "multiply_total",
+        "value": -0.2
+      }
+    ],
+    "condition": {
+      "type": "origins:predicate",
+      "predicate": "regalia:power/agoraphobia/height_t1"
+    }
+  },
+  "t2": {
+    "type": "origins:conditioned_attribute",
+    "modifiers": [
+      {
+        "attribute": "minecraft:generic.armor_toughness",
+        "operation": "multiply_total",
+        "value": -0.4
+      }
+    ],
+    "condition": {
+      "type": "origins:predicate",
+      "predicate": "regalia:power/agoraphobia/height_t2"
+    }
+  },
+  "t3": {
+    "type": "origins:conditioned_attribute",
+    "modifiers": [
+      {
+        "attribute": "minecraft:generic.armor_toughness",
+        "operation": "multiply_total",
+        "value": -0.6
+      }
+    ],
+    "condition": {
+      "type": "origins:predicate",
+      "predicate": "regalia:power/agoraphobia/height_t3"
+    }
+  },
+  "t4": {
+    "type": "origins:conditioned_attribute",
+    "modifiers": [
+      {
+        "attribute": "minecraft:generic.armor_toughness",
+        "operation": "multiply_total",
+        "value": -0.8
+      }
+    ],
+    "condition": {
+      "type": "origins:predicate",
+      "predicate": "regalia:power/agoraphobia/height_t4"
+    }
+  },
+  "t5": {
+    "type": "origins:conditioned_attribute",
+    "modifiers": [
+      {
+        "attribute": "minecraft:generic.armor_toughness",
+        "operation": "multiply_total",
+        "value": -1.0
+      }
+    ],
+    "condition": {
+      "type": "origins:predicate",
+      "predicate": "regalia:power/agoraphobia/height_t5"
+    }
+  }
+}

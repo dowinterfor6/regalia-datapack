@@ -1,0 +1,15 @@
+{
+  "name": "Earth [☀2]",
+  "description": "Tough and sturdy.",
+  "icon": "minecraft:raw_iron",
+  "powers": [
+    "regalia:config/element/earth",
+    "regalia:power/power_through",
+    "regalia:power/resonance",
+    "regalia:power/climbing",
+    "regalia:power/agoraphobia"
+  ],
+  "order": 1,
+  "impact": 0,
+  "unchoosable": true
+}

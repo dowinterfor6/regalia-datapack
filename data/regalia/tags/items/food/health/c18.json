@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "farmersdelight:noodle_soup", "required": false },
+    { "id": "farmersdelight:pasta_with_meatballs", "required": false },
+    { "id": "farmersdelight:pasta_with_mutton_chop", "required": false },
+    { "id": "farmersdelight:roasted_mutton_chops", "required": false },
+    { "id": "farmersdelight:steak_and_potatoes", "required": false }
+  ]
+}

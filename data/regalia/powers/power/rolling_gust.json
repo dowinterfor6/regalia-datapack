@@ -1,0 +1,22 @@
+{
+  "name": "Rolling Gust",
+  "description": "When using a Combat Roll, deal knockback to anything you collide into.",
+  "type": "origins:action_over_time",
+  "interval": 1,
+  "entity_action": {
+    "type": "origins:selector",
+    "selector": "@e[type=!minecraft:player,distance=0.001..1.5]",
+    "bientity_action": {
+      "type": "origins:add_velocity",
+      "set": true,
+      "y": 0.1,
+      "z": 1.5
+    }
+  },
+  "condition": {
+    "type": "origins:resource",
+    "resource": "regalia:power/combat_roll_data_active",
+    "comparison": ">=",
+    "compare_to": 1
+  }
+}

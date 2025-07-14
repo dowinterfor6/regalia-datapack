@@ -1,0 +1,13 @@
+{
+  "name": "Small",
+  "description": "Not quite the shortest out there.",
+  "icon": "minecraft:glass",
+  "powers": [
+    "regalia:s_small/config",
+    "regalia:s_small/attributes",
+    "regalia:s_small/falling_damage"
+  ],
+  "order": 2,
+  "impact": 0,
+  "unchoosable": false
+}

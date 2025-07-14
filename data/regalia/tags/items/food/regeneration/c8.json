@@ -1,0 +1,28 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:cooked_beef",
+    "minecraft:cooked_porkchop",
+    { "id": "alexsmobs:cooked_kangaroo_meat", "required": false },
+    { "id": "betterend:blossom_berry_jelly", "required": false },
+    { "id": "betterend:cave_pumpkin_pie", "required": false },
+    { "id": "betterend:sweet_berry_jelly", "required": false },
+    { "id": "biomeswevegone:allium_oddion_soup", "required": false },
+    { "id": "create:honeyed_apple", "required": false },
+    { "id": "farmersdelight:cabbage_rolls", "required": false },
+    { "id": "farmersdelight:ham", "required": false },
+    { "id": "farmersdelight:nether_salad", "required": false },
+    { "id": "quark:cooked_crab_leg", "required": false },
+    { "id": "rusticdelight:baked_potato_slices", "required": false },
+    { "id": "rusticdelight:bell_pepper_pasta", "required": false },
+    { "id": "rusticdelight:potato_salad", "required": false },
+    { "id": "rusticdelight:spring_rolls", "required": false },
+    { "id": "rusticdelight:stuffed_bell_pepper_green", "required": false },
+    { "id": "rusticdelight:stuffed_bell_pepper_red", "required": false },
+    { "id": "rusticdelight:stuffed_bell_pepper_yellow", "required": false },
+    { "id": "rusticdelight:sweet_salad", "required": false },
+    { "id": "rusticdelight:syrup_sandwich", "required": false },
+    { "id": "spawn:escargot", "required": false },
+    { "id": "spawn:tuna_sandwich", "required": false }
+  ]
+}

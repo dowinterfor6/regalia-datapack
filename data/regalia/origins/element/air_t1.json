@@ -1,0 +1,17 @@
+{
+  "name": "Air [☀1]",
+  "description": "Light like the wind.",
+  "icon": "minecraft:feather",
+  "powers": [
+    "regalia:config/element/air",
+    "regalia:power/ascend",
+    "regalia:power/softer_landings",
+    "regalia:power/hollow_bones",
+    "regalia:locked/whirlwind",
+    "regalia:locked/death_from_above",
+    "regalia:locked/unbroken_wings"
+  ],
+  "order": 0,
+  "impact": 0,
+  "unchoosable": false
+}

@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "#regalia:_g/black_ice",
+    "#regalia:_g/borealis_ice",
+    "#regalia:_g/emerald_ice",
+    "#regalia:_g/vanilla_ice",
+    { "id": "terrainslabs:packed_ice_slab", "required": false },
+    { "id": "yungscavebiomes:ice_sheet", "required": false },
+    { "id": "yungscavebiomes:rare_ice", "required": false }
+  ]
+}

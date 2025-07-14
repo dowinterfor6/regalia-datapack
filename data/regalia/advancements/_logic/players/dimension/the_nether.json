@@ -1,0 +1,20 @@
+{
+  "sends_telemetry_event": false,
+  "parent": "regalia:_logic/root",
+  "criteria": {
+	  "enter": {
+	    "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "minecraft:the_nether"
+      }
+	  }
+  },
+  "requirements": [
+    [
+	    "enter"
+	  ]
+  ],
+  "rewards": {
+    "function": "regalia:logic/players/dimension/the_nether"
+  }
+}

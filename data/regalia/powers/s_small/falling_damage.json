@@ -1,0 +1,16 @@
+{
+  "name": "Light Steps",
+  "description": "You take less Falling damage.",
+  "type": "origins:multiple",
+  "damage": {
+    "type": "origins:modify_damage_taken",
+    "damage_condition": {
+      "type": "origins:in_tag",
+      "tag": "regalia:falling"
+    },
+    "modifier": {
+      "operation": "multiply_total_multiplicative",
+      "value": -0.5
+    }
+  }
+}

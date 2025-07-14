@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "farmersdelight:beef_stew", "required": false },
+    { "id": "farmersdelight:chicken_soup", "required": false },
+    { "id": "farmersdelight:fish_stew", "required": false },
+    { "id": "farmersdelight:kelp_roll", "required": false },
+    { "id": "farmersdelight:mushroom_rice", "required": false },
+    { "id": "farmersdelight:vegetable_soup", "required": false },
+    { "id": "netherexp:roasted_bone", "required": false }
+  ]
+}

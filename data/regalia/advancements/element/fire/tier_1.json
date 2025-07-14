@@ -1,0 +1,32 @@
+{
+  "sends_telemetry_event": false,
+  "parent": "regalia:element/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:blaze_powder"
+    },
+    "title": [
+      [{"text":"Fire Affinity"}]
+    ],
+    "description": [
+      [{"text":"Synergize with the fire and gain its abilities.","color":"gray"}]
+    ],
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+	  "exist": {
+	    "trigger": "minecraft:impossible"
+	  }
+  },
+  "requirements": [
+    [
+	    "exist"
+	  ]
+  ],
+  "rewards": {
+    "function": "regalia:logic/unlocks/fire/tier_1"
+  }
+}

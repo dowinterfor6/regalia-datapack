@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "biomeswevegone:black_ice", "required": false },
+    { "id": "biomeswevegone:packed_black_ice", "required": false }
+  ]
+}

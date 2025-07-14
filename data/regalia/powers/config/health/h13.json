@@ -1,0 +1,11 @@
+{
+  "hidden": true,
+  "type": "origins:attribute",
+  "modifiers": [
+    {
+      "attribute": "minecraft:generic.max_health",
+      "operation": "addition",
+      "value": -7.0
+    }
+  ]
+}

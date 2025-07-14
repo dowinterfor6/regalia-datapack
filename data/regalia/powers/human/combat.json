@@ -1,0 +1,32 @@
+{
+  "hidden": true,
+  "type": "origins:multiple",
+  "display": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "start_value": 0,
+    "hud_render": {
+      "should_render": true,
+      "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+      "bar_index": 1,
+      "condition": {
+        "type": "origins:resource",
+        "resource": "regalia:human/combat_display",
+        "comparison": "==",
+        "compare_to": 1
+      }
+    }
+  },
+  "trigger": {
+    "type": "origins:action_when_hit",
+    "cooldown": 5,
+    "bientity_action": {
+      "type": "origins:target_action",
+      "action": {
+        "type": "origins:execute_command",
+        "command": "function regalia:logic/players/combat/start"
+      }
+    }
+  }
+}

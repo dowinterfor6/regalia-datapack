@@ -1,0 +1,11 @@
+## keep_inventory - disable
+# checks
+scoreboard players set $dataA rga.data 0
+execute at @s if dimension minecraft:the_end run scoreboard players add $dataA rga.data 1
+# fail
+execute unless score $dataA rga.data matches 0 run function regalia:config/keep_inventory/fail
+execute unless score $dataA rga.data matches 0 run return 0
+# apply
+scoreboard players reset @s rga.config.keep_inventory
+#power revokeall @s regalia:config/keep_inventory
+execute if score $debug rga.settings matches 1 run tellraw @a[tag=rga.admin] [{"text":" [D> ","color":"yellow"},{"text":"CONFIG/KEEPINV: Setting ","color":"gray"},{"text":"Target [","color":"white"},{"selector":"@s","color":"aqua"},{"text":"]","color":"white"},{"text":" to ","color":"gray"},{"text":"State [","color":"white"},{"text":"disabled","color":"aqua"},{"text":"]","color":"white"}]

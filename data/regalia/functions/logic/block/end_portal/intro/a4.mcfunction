@@ -1,0 +1,3 @@
+## end_portal - intro/a4
+playsound minecraft:entity.guardian.hurt block @a ~ ~ ~ 1.0 1.2
+summon minecraft:text_display ~ ~0.5 ~ {Tags:["rga.b.end_portal","rga.d.text_4"],text:"[{\"text\":\"Prepare for a long journey.\",\"color\":\"yellow\"}]",background:0,view_range:0.5f,shadow:true,see_through:false,alignment:"center",billboard:"vertical",brightness:{block:15,sky:15},shadow_radius:0.0f,shadow_radius:0.0f,view_range:1.0f}

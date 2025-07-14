@@ -1,0 +1,103 @@
+{
+  "name": "Resonance [60⌛]",
+  "description": "§e[Key] = 'Secondary Power'§r\nUpon activation; absorb all incoming damage for 1 second and reflect it all back through an explosion.",
+  "type": "origins:multiple",
+  "data_cooldown": {
+    "type": "origins:resource",
+    "min": -1,
+    "max": 1200,
+    "start_value": 0,
+    "hud_render": {
+      "should_render": true,
+      "bar_index": 5,
+      "inverted": true,
+      "condition": {
+        "type": "origins:resource",
+        "resource": "regalia:power/resonance_data_cooldown",
+        "comparison": ">=",
+        "compare_to": 1
+      }
+    }
+  },
+  "trigger": {
+    "type": "origins:active_self",
+    "key": {
+      "key": "key.origins.secondary_active"
+    },
+    "cooldown": 5,
+    "entity_action": {
+      "type": "origins:if_else",
+      "if_action": {
+        "type": "origins:execute_command",
+        "command": "function regalia:logic/power/resonance/trigger"
+      },
+      "else_action": {
+        "type": "origins:execute_command",
+        "command": "function regalia:logic/power/_g/fail"
+      },
+      "condition": {
+        "type": "origins:resource",
+        "resource": "regalia:power/resonance_data_cooldown",
+        "comparison": "==",
+        "compare_to": 0
+      }
+    }
+  },
+  "tick_active": {
+    "type": "origins:action_over_time",
+    "interval": 1,
+    "entity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:apply_effect",
+          "effects": [
+            {
+              "effect": "minecraft:resistance",
+              "amplifier": 250,
+              "duration": 2,
+              "is_ambient": false,
+              "show_particles": false,
+              "show_icon": false
+            },
+            {
+              "effect": "minecraft:slowness",
+              "amplifier": 4,
+              "duration": 2,
+              "is_ambient": false,
+              "show_particles": false,
+              "show_icon": false
+            }
+          ]
+        }
+      ]
+    },
+    "condition": {
+      "type": "origins:resource",
+      "resource": "regalia:power/resonance_data_cooldown",
+      "comparison": "==",
+      "compare_to": -1
+    }
+  },
+  "tick_cooldown": {
+    "type": "origins:action_over_time",
+    "interval": 1,
+    "entity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:change_resource",
+          "resource": "regalia:power/resonance_data_cooldown",
+          "operation": "add",
+          "change": -1
+        }
+      ]
+    },
+    "condition": {
+      "type": "origins:resource",
+      "resource": "regalia:power/resonance_data_cooldown",
+      "comparison": ">=",
+      "compare_to": 1
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "alexsmobs:cooked_moose_ribs", "required": false },
+    { "id": "create:chocolate_glazed_berries", "required": false }
+  ]
+}

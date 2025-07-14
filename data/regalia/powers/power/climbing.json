@@ -1,0 +1,41 @@
+{
+  "name": "Rock Crawler",
+  "description": "When sneaking, you are able to climb up any kind of wall like a ladder.",
+  "type": "origins:multiple",
+  "climbing": {
+    "type": "origins:climbing",
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:sneaking"
+        },
+        {
+          "type": "origins:collided_horizontally"
+        }
+      ]
+    },
+    "allow_holding": true,
+    "hold_condition": {
+      "type": "origins:or",
+      "conditions": [
+        {
+          "type": "origins:block_collision",
+          "block_condition": {
+            "type": "origins:movement_blocking"
+          },
+          "offset_x": -0.01,
+          "offset_z": -0.01
+        },
+        {
+          "type": "origins:block_collision",
+          "block_condition": {
+            "type": "origins:movement_blocking"
+          },
+          "offset_x": 0.01,
+          "offset_z": 0.01
+        }
+      ]
+    }
+  }
+}

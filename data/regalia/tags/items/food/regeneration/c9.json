@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "biomeswevegone:blooming_oddion", "required": false },
+    { "id": "biomeswevegone:white_puffball_stew", "required": false },
+    { "id": "farmersdelight:cooked_rice", "required": false },
+    { "id": "farmersdelight:fruit_salad", "required": false },
+    { "id": "farmersdelight:kelp_roll_slice", "required": false },
+    { "id": "farmersdelight:mixed_salad", "required": false }
+  ]
+}

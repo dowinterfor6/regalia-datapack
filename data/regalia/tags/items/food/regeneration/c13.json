@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "farmersdelight:barbecue_stick", "required": false },
+    { "id": "farmersdelight:dumplings", "required": false },
+    { "id": "farmersdelight:egg_sandwich", "required": false }
+  ]
+}

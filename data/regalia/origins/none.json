@@ -1,0 +1,9 @@
+{
+  "name": "None",
+  "description": "You currently lack anything within this catagory.",
+  "icon": "minecraft:glass",
+  "powers": [],
+  "order": 0,
+  "impact": 0,
+  "unchoosable": true
+}

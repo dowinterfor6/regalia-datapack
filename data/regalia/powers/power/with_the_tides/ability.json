@@ -1,0 +1,127 @@
+{
+  "name": "With The Tides",
+  "description": "§e[Key] = 'Secondary Power'§r\nToggle the ability to adapt your body to the current Moon Phase.",
+  "type": "origins:multiple",
+  "data_active": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 8,
+    "start_value": 0
+  },
+  "toggle": {
+    "type": "origins:toggle",
+    "active_by_default": false,
+    "retain_state": false,
+    "key": {
+      "key": "key.origins.secondary_active"
+    }
+  },
+  "check_enable": {
+    "type": "origins:action_over_time",
+    "interval": 10,
+    "entity_action": {
+      "type": "origins:if_else_list",
+      "actions": [
+        {
+          "action": {
+            "type": "origins:execute_command",
+            "command": "function regalia:logic/power/with_the_tides/status/on"
+          },
+          "condition": {
+            "type": "origins:and",
+            "conditions": [
+              {
+                "type": "origins:resource",
+                "resource": "regalia:power/with_the_tides/ability_data_active",
+                "comparison": "==",
+                "compare_to": 0
+              },
+              {
+                "type": "origins:daytime",
+                "inverted": true
+              },
+              {
+                "type": "origins:dimension",
+                "dimension": "minecraft:overworld"
+              }
+            ]
+          }
+        },
+        {
+          "action": {
+            "type": "origins:execute_command",
+            "command": "function regalia:logic/power/with_the_tides/status/off"
+          },
+          "condition": {
+            "type": "origins:and",
+            "conditions": [
+              {
+                "type": "origins:resource",
+                "resource": "regalia:power/with_the_tides/ability_data_active",
+                "comparison": ">",
+                "compare_to": 0
+              },
+              {
+                "type": "origins:or",
+                "conditions": [
+                  {
+                    "type": "origins:daytime"
+                  },
+                  {
+                    "type": "origins:dimension",
+                    "dimension": "minecraft:overworld",
+                    "inverted": true
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:power_active",
+          "power": "regalia:power/with_the_tides/ability_toggle"
+        }
+      ]
+    }
+  },
+  "check_disable": {
+    "type": "origins:action_over_time",
+    "interval": 10,
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function regalia:logic/power/with_the_tides/status/off"
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:power_active",
+          "power": "regalia:power/with_the_tides/ability_toggle",
+          "inverted": true
+        },
+        {
+          "type": "origins:resource",
+          "resource": "regalia:power/with_the_tides/ability_data_active",
+          "comparison": ">",
+          "compare_to": 0
+        }
+      ]
+    }
+  },
+  "refresh": {
+    "type": "origins:action_on_callback",
+    "entity_action_added": {
+      "type": "origins:execute_command",
+      "command": "function regalia:logic/power/with_the_tides/status/refresh"
+    },
+    "entity_action_respawn": {
+      "type": "origins:execute_command",
+      "command": "function regalia:logic/power/with_the_tides/status/refresh"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "Fueled",
+  "description": "Gain better Regeneration when in sunlight or in the Nether.",
+  "type": "origins:action_over_time",
+  "interval": 10,
+  "rising_action": {
+    "type": "origins:execute_command",
+    "command": "function regalia:logic/power/fueled/on"
+  },
+  "falling_action": {
+    "type": "origins:execute_command",
+    "command": "function regalia:logic/power/fueled/off"
+  },
+  "condition": {
+    "type": "origins:or",
+    "conditions": [
+      {
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type": "origins:exposed_to_sun"
+          },
+          {
+            "type": "origins:dimension",
+            "dimension": "minecraft:overworld"
+          }
+        ]
+      },
+      {
+        "type": "origins:dimension",
+        "dimension": "minecraft:the_nether"
+      }
+    ]
+  }
+}

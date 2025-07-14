@@ -1,0 +1,36 @@
+{
+  "hidden": true,
+  "type": "origins:modify_velocity",
+  "axes": [ "y" ],
+  "modifier": {
+    "operation": "multiply_total",
+    "value": -0.8
+  },
+  "condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:status_effect",
+        "effect": "minecraft:dolphins_grace",
+        "inverted": true
+      },
+      {
+        "type": "origins:fluid_height",
+        "fluid": "minecraft:water",
+        "comparison": "==",
+        "compare_to": 0.0,
+        "inverted": true
+      },
+      {
+        "type": "origins:in_block",
+        "block_condition": {
+          "type": "origins:fluid",
+          "fluid_condition": {
+            "type": "origins:still",
+            "inverted": true
+          }
+        }
+      }
+    ]
+  }
+}

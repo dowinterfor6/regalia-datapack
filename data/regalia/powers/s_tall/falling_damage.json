@@ -1,0 +1,28 @@
+{
+  "name": "Heavy Steps",
+  "description": "You take more Falling damage.",
+  "type": "origins:multiple",
+  "damage": {
+    "type": "origins:modify_damage_taken",
+    "damage_condition": {
+      "type": "origins:in_tag",
+      "tag": "regalia:falling"
+    },
+    "modifier": {
+      "operation": "multiply_total_multiplicative",
+      "value": 0.25
+    }
+  },
+  "safety": {
+    "type": "origins:invulnerability",
+    "damage_condition": {
+      "type": "origins:in_tag",
+      "tag": "regalia:falling"
+    },
+    "condition": {
+      "type": "origins:fall_distance",
+      "comparison": "<",
+      "compare_to": 3
+    }
+  }
+}

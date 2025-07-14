@@ -1,0 +1,334 @@
+{
+  "hidden": true,
+  "type": "origins:multiple",
+  "c0": {
+    "type": "origins:action_on_item_use",
+    "trigger": "finish",
+    "priority": 0,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/regeneration/c0"
+      }
+    },
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function regalia:logic/food/incoming/regeneration/c0"
+    }
+  },
+  "c1": {
+    "type": "origins:action_on_item_use",
+    "trigger": "finish",
+    "priority": 0,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/regeneration/c1"
+      }
+    },
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function regalia:logic/food/incoming/regeneration/c1"
+    }
+  },
+  "c2": {
+    "type": "origins:action_on_item_use",
+    "trigger": "finish",
+    "priority": 0,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/regeneration/c2"
+      }
+    },
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function regalia:logic/food/incoming/regeneration/c2"
+    }
+  },
+  "c3": {
+    "type": "origins:action_on_item_use",
+    "trigger": "finish",
+    "priority": 0,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/regeneration/c3"
+      }
+    },
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function regalia:logic/food/incoming/regeneration/c3"
+    }
+  },
+  "c4": {
+    "type": "origins:action_on_item_use",
+    "trigger": "finish",
+    "priority": 0,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/regeneration/c4"
+      }
+    },
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function regalia:logic/food/incoming/regeneration/c4"
+    }
+  },
+  "c5": {
+    "type": "origins:action_on_item_use",
+    "trigger": "finish",
+    "priority": 0,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/regeneration/c5"
+      }
+    },
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function regalia:logic/food/incoming/regeneration/c5"
+    }
+  },
+  "c6": {
+    "type": "origins:action_on_item_use",
+    "trigger": "finish",
+    "priority": 0,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/regeneration/c6"
+      }
+    },
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function regalia:logic/food/incoming/regeneration/c6"
+    }
+  },
+  "c7": {
+    "type": "origins:action_on_item_use",
+    "trigger": "finish",
+    "priority": 0,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/regeneration/c7"
+      }
+    },
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function regalia:logic/food/incoming/regeneration/c7"
+    }
+  },
+  "c8": {
+    "type": "origins:action_on_item_use",
+    "trigger": "finish",
+    "priority": 0,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/regeneration/c8"
+      }
+    },
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function regalia:logic/food/incoming/regeneration/c8"
+    }
+  },
+  "c9": {
+    "type": "origins:action_on_item_use",
+    "trigger": "finish",
+    "priority": 0,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/regeneration/c9"
+      }
+    },
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function regalia:logic/food/incoming/regeneration/c9"
+    }
+  },
+  "c10": {
+    "type": "origins:action_on_item_use",
+    "trigger": "finish",
+    "priority": 0,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/regeneration/c10"
+      }
+    },
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function regalia:logic/food/incoming/regeneration/c10"
+    }
+  },
+  "c11": {
+    "type": "origins:action_on_item_use",
+    "trigger": "finish",
+    "priority": 0,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/regeneration/c11"
+      }
+    },
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function regalia:logic/food/incoming/regeneration/c11"
+    }
+  },
+  "c12": {
+    "type": "origins:action_on_item_use",
+    "trigger": "finish",
+    "priority": 0,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/regeneration/c12"
+      }
+    },
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function regalia:logic/food/incoming/regeneration/c12"
+    }
+  },
+  "c13": {
+    "type": "origins:action_on_item_use",
+    "trigger": "finish",
+    "priority": 0,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/regeneration/c13"
+      }
+    },
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function regalia:logic/food/incoming/regeneration/c13"
+    }
+  },
+  "c14": {
+    "type": "origins:action_on_item_use",
+    "trigger": "finish",
+    "priority": 0,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/regeneration/c14"
+      }
+    },
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function regalia:logic/food/incoming/regeneration/c14"
+    }
+  },
+  "c15": {
+    "type": "origins:action_on_item_use",
+    "trigger": "finish",
+    "priority": 0,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/regeneration/c15"
+      }
+    },
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function regalia:logic/food/incoming/regeneration/c15"
+    }
+  },
+  "c16": {
+    "type": "origins:action_on_item_use",
+    "trigger": "finish",
+    "priority": 0,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/regeneration/c16"
+      }
+    },
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function regalia:logic/food/incoming/regeneration/c16"
+    }
+  },
+  "c17": {
+    "type": "origins:action_on_item_use",
+    "trigger": "finish",
+    "priority": 0,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/regeneration/c17"
+      }
+    },
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function regalia:logic/food/incoming/regeneration/c17"
+    }
+  },
+  "c18": {
+    "type": "origins:action_on_item_use",
+    "trigger": "finish",
+    "priority": 0,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/regeneration/c18"
+      }
+    },
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function regalia:logic/food/incoming/regeneration/c18"
+    }
+  },
+  "c19": {
+    "type": "origins:action_on_item_use",
+    "trigger": "finish",
+    "priority": 0,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/regeneration/c19"
+      }
+    },
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function regalia:logic/food/incoming/regeneration/c19"
+    }
+  },
+  "c20": {
+    "type": "origins:action_on_item_use",
+    "trigger": "finish",
+    "priority": 0,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/regeneration/c20"
+      }
+    },
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function regalia:logic/food/incoming/regeneration/c20"
+    }
+  },
+  "c30": {
+    "type": "origins:action_on_item_use",
+    "trigger": "finish",
+    "priority": 0,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/regeneration/c30"
+      }
+    },
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function regalia:logic/food/incoming/regeneration/c30"
+    }
+  }
+}

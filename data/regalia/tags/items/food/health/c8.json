@@ -1,0 +1,32 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "alexsmobs:kangaroo_burger", "required": false },
+    { "id": "alexsmobs:sopa_de_macaco", "required": false },
+    { "id": "betterend:blossom_berry_jelly", "required": false },
+    { "id": "betterend:cave_pumpkin_pie", "required": false },
+    { "id": "betterend:sweet_berry_jelly", "required": false },
+    { "id": "betternether:stalagnate_bowl_apple", "required": false },
+    { "id": "biomeswevegone:blooming_oddion", "required": false },
+    { "id": "biomeswevegone:white_puffball_stew", "required": false },
+    { "id": "create:chocolate_glazed_berries", "required": false },
+    { "id": "create:honeyed_apple", "required": false },
+    { "id": "farmersdelight:cabbage_rolls", "required": false },
+    { "id": "farmersdelight:cod_roll", "required": false },
+    { "id": "farmersdelight:egg_sandwich", "required": false },
+    { "id": "farmersdelight:glow_berry_custard", "required": false },
+    { "id": "farmersdelight:kelp_roll_slice", "required": false },
+    { "id": "farmersdelight:mixed_salad", "required": false },
+    { "id": "farmersdelight:nether_salad", "required": false },
+    { "id": "farmersdelight:salmon_roll", "required": false },
+    { "id": "rusticdelight:bell_pepper_soup", "required": false },
+    { "id": "rusticdelight:calamari_roll", "required": false },
+    { "id": "rusticdelight:cherry_blossom_roll", "required": false },
+    { "id": "rusticdelight:bell_pepper_roll_green", "required": false },
+    { "id": "rusticdelight:potato_salad", "required": false },
+    { "id": "rusticdelight:bell_pepper_roll_red", "required": false },
+    { "id": "rusticdelight:sweet_salad", "required": false },
+    { "id": "rusticdelight:bell_pepper_roll_yellow", "required": false },
+    { "id": "spawn:tuna_sandwich", "required": false }
+  ]
+}

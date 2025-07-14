@@ -1,0 +1,139 @@
+{
+  "hidden": true,
+  "type": "origins:multiple",
+  "c0": {
+    "type": "origins:action_on_item_use",
+    "trigger": "finish",
+    "priority": 0,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/duration/c0"
+      }
+    },
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function regalia:logic/food/incoming/duration/c0"
+    }
+  },
+  "c1": {
+    "type": "origins:action_on_item_use",
+    "trigger": "finish",
+    "priority": 0,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/duration/c1"
+      }
+    },
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function regalia:logic/food/incoming/duration/c1"
+    }
+  },
+  "c5": {
+    "type": "origins:action_on_item_use",
+    "trigger": "finish",
+    "priority": 0,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/duration/c5"
+      }
+    },
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function regalia:logic/food/incoming/duration/c5"
+    }
+  },
+  "c10": {
+    "type": "origins:action_on_item_use",
+    "trigger": "finish",
+    "priority": 0,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/duration/c10"
+      }
+    },
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function regalia:logic/food/incoming/duration/c10"
+    }
+  },
+  "c20": {
+    "type": "origins:action_on_item_use",
+    "trigger": "finish",
+    "priority": 0,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/duration/c20"
+      }
+    },
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function regalia:logic/food/incoming/duration/c20"
+    }
+  },
+  "c30": {
+    "type": "origins:action_on_item_use",
+    "trigger": "finish",
+    "priority": 0,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/duration/c30"
+      }
+    },
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function regalia:logic/food/incoming/duration/c30"
+    }
+  },
+  "c60": {
+    "type": "origins:action_on_item_use",
+    "trigger": "finish",
+    "priority": 0,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/duration/c60"
+      }
+    },
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function regalia:logic/food/incoming/duration/c60"
+    }
+  },
+  "c90": {
+    "type": "origins:action_on_item_use",
+    "trigger": "finish",
+    "priority": 0,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/duration/c90"
+      }
+    },
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function regalia:logic/food/incoming/duration/c90"
+    }
+  },
+  "c120": {
+    "type": "origins:action_on_item_use",
+    "trigger": "finish",
+    "priority": 0,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/duration/c120"
+      }
+    },
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function regalia:logic/food/incoming/duration/c120"
+    }
+  }
+}

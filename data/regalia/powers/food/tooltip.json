@@ -1,0 +1,641 @@
+{
+  "hidden": true,
+  "type": "origins:multiple",
+  "base": {
+    "type": "origins:tooltip",
+    "order": -10,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/track"
+      }
+    },
+    "text": [
+			{"text":"[ NUTRITION FACTS ]","color":"gold"}
+		]
+  },
+  "c_none": {
+    "type": "origins:tooltip",
+    "order": -9,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/category/none"
+      }
+    },
+    "text": [
+			{"text":"☀: Always Edible","color":"green"}
+		]
+  },
+  "c_drink": {
+    "type": "origins:tooltip",
+    "order": -9,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/category/drink"
+      }
+    },
+    "text": [
+			{"text":"🔎: ","color":"yellow"},{"text":"Drink","color":"white"}
+		]
+  },
+  "c_meal": {
+    "type": "origins:tooltip",
+    "order": -9,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/category/meal"
+      }
+    },
+    "text": [
+			{"text":"🔎: ","color":"yellow"},{"text":"Meal","color":"white"}
+		]
+  },
+  "c_side": {
+    "type": "origins:tooltip",
+    "order": -9,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/category/side"
+      }
+    },
+    "text": [
+			{"text":"🔎: ","color":"yellow"},{"text":"Side","color":"white"}
+		]
+  },
+  "c_snack": {
+    "type": "origins:tooltip",
+    "order": -9,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/category/snack"
+      }
+    },
+    "text": [
+			{"text":"🔎: ","color":"yellow"},{"text":"Snack","color":"white"}
+		]
+  },
+  "s_purge": {
+    "type": "origins:tooltip",
+    "order": -8,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/special/purge"
+      }
+    },
+    "text": [
+			{"text":"☀: Purges Stomach","color":"green"}
+		]
+  },
+  "d0": {
+    "type": "origins:tooltip",
+    "order": -5,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/duration/c0"
+      }
+    },
+    "text": [
+			{"text":"⌚: ","color":"yellow"},{"text":"None","color":"white"}
+		]
+  },
+  "d1": {
+    "type": "origins:tooltip",
+    "order": -5,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/duration/c1"
+      }
+    },
+    "text": [
+			{"text":"⌚: ","color":"yellow"},{"text":"1 Minute","color":"white"}
+		]
+  },
+  "d5": {
+    "type": "origins:tooltip",
+    "order": -5,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/duration/c5"
+      }
+    },
+    "text": [
+			{"text":"⌚: ","color":"yellow"},{"text":"5 Minutes","color":"white"}
+		]
+  },
+  "d10": {
+    "type": "origins:tooltip",
+    "order": -5,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/duration/c10"
+      }
+    },
+    "text": [
+			{"text":"⌚: ","color":"yellow"},{"text":"10 Minutes","color":"white"}
+		]
+  },
+  "d20": {
+    "type": "origins:tooltip",
+    "order": -5,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/duration/c20"
+      }
+    },
+    "text": [
+			{"text":"⌚: ","color":"yellow"},{"text":"20 Minutes","color":"white"}
+		]
+  },
+  "d30": {
+    "type": "origins:tooltip",
+    "order": -5,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/duration/c30"
+      }
+    },
+    "text": [
+			{"text":"⌚: ","color":"yellow"},{"text":"30 Minutes","color":"white"}
+		]
+  },
+  "d60": {
+    "type": "origins:tooltip",
+    "order": -5,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/duration/c60"
+      }
+    },
+    "text": [
+			{"text":"⌚: ","color":"yellow"},{"text":"1 Hour","color":"white"}
+		]
+  },
+  "d90": {
+    "type": "origins:tooltip",
+    "order": -5,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/duration/c90"
+      }
+    },
+    "text": [
+			{"text":"⌚: ","color":"yellow"},{"text":"1 Hour, 30 Minutes","color":"white"}
+		]
+  },
+  "d120": {
+    "type": "origins:tooltip",
+    "order": -5,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/duration/c120"
+      }
+    },
+    "text": [
+			{"text":"⌚: ","color":"yellow"},{"text":"2 Hours","color":"white"}
+		]
+  },
+  "h0": {
+    "type": "origins:tooltip",
+    "order": -4,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/health/c0"
+      }
+    },
+    "text": [
+			{"text":"❤: ","color":"yellow"},{"text":"+0 Hearts","color":"white"}
+		]
+  },
+  "h2": {
+    "type": "origins:tooltip",
+    "order": -4,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/health/c2"
+      }
+    },
+    "text": [
+			{"text":"❤: ","color":"yellow"},{"text":"+1 Heart","color":"white"}
+		]
+  },
+  "h4": {
+    "type": "origins:tooltip",
+    "order": -4,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/health/c4"
+      }
+    },
+    "text": [
+			{"text":"❤: ","color":"yellow"},{"text":"+2 Hearts","color":"white"}
+		]
+  },
+  "h6": {
+    "type": "origins:tooltip",
+    "order": -4,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/health/c6"
+      }
+    },
+    "text": [
+			{"text":"❤: ","color":"yellow"},{"text":"+3 Hearts","color":"white"}
+		]
+  },
+  "h8": {
+    "type": "origins:tooltip",
+    "order": -4,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/health/c8"
+      }
+    },
+    "text": [
+			{"text":"❤: ","color":"yellow"},{"text":"+4 Hearts","color":"white"}
+		]
+  },
+  "h10": {
+    "type": "origins:tooltip",
+    "order": -4,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/health/c10"
+      }
+    },
+    "text": [
+			{"text":"❤: ","color":"yellow"},{"text":"+5 Hearts","color":"white"}
+		]
+  },
+  "h12": {
+    "type": "origins:tooltip",
+    "order": -4,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/health/c12"
+      }
+    },
+    "text": [
+			{"text":"❤: ","color":"yellow"},{"text":"+6 Hearts","color":"white"}
+		]
+  },
+  "h14": {
+    "type": "origins:tooltip",
+    "order": -4,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/health/c14"
+      }
+    },
+    "text": [
+			{"text":"❤: ","color":"yellow"},{"text":"+7 Hearts","color":"white"}
+		]
+  },
+  "h16": {
+    "type": "origins:tooltip",
+    "order": -4,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/health/c16"
+      }
+    },
+    "text": [
+			{"text":"❤: ","color":"yellow"},{"text":"+8 Hearts","color":"white"}
+		]
+  },
+  "h18": {
+    "type": "origins:tooltip",
+    "order": -4,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/health/c18"
+      }
+    },
+    "text": [
+			{"text":"❤: ","color":"yellow"},{"text":"+9 Hearts","color":"white"}
+		]
+  },
+  "h20": {
+    "type": "origins:tooltip",
+    "order": -4,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/health/c20"
+      }
+    },
+    "text": [
+			{"text":"❤: ","color":"yellow"},{"text":"+10 Hearts","color":"white"}
+		]
+  },
+  "r0": {
+    "type": "origins:tooltip",
+    "order": -3,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/regeneration/c0"
+      }
+    },
+    "text": [
+			{"text":"🔄: ","color":"yellow"},{"text":"+0% Amount","color":"white"}
+		]
+  },
+  "r1": {
+    "type": "origins:tooltip",
+    "order": -3,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/regeneration/c1"
+      }
+    },
+    "text": [
+			{"text":"🔄: ","color":"yellow"},{"text":"+10% Amount","color":"white"}
+		]
+  },
+  "r2": {
+    "type": "origins:tooltip",
+    "order": -3,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/regeneration/c2"
+      }
+    },
+    "text": [
+			{"text":"🔄: ","color":"yellow"},{"text":"+20% Amount","color":"white"}
+		]
+  },
+  "r3": {
+    "type": "origins:tooltip",
+    "order": -3,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/regeneration/c3"
+      }
+    },
+    "text": [
+			{"text":"🔄: ","color":"yellow"},{"text":"+30% Amount","color":"white"}
+		]
+  },
+  "r4": {
+    "type": "origins:tooltip",
+    "order": -3,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/regeneration/c4"
+      }
+    },
+    "text": [
+			{"text":"🔄: ","color":"yellow"},{"text":"+40% Amount","color":"white"}
+		]
+  },
+  "r5": {
+    "type": "origins:tooltip",
+    "order": -3,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/regeneration/c5"
+      }
+    },
+    "text": [
+			{"text":"🔄: ","color":"yellow"},{"text":"+50% Amount","color":"white"}
+		]
+  },
+  "r6": {
+    "type": "origins:tooltip",
+    "order": -3,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/regeneration/c6"
+      }
+    },
+    "text": [
+			{"text":"🔄: ","color":"yellow"},{"text":"+60% Amount","color":"white"}
+		]
+  },
+  "r7": {
+    "type": "origins:tooltip",
+    "order": -3,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/regeneration/c7"
+      }
+    },
+    "text": [
+			{"text":"🔄: ","color":"yellow"},{"text":"+70% Amount","color":"white"}
+		]
+  },
+  "r8": {
+    "type": "origins:tooltip",
+    "order": -3,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/regeneration/c8"
+      }
+    },
+    "text": [
+			{"text":"🔄: ","color":"yellow"},{"text":"+80% Amount","color":"white"}
+		]
+  },
+  "r9": {
+    "type": "origins:tooltip",
+    "order": -3,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/regeneration/c9"
+      }
+    },
+    "text": [
+			{"text":"🔄: ","color":"yellow"},{"text":"+90% Amount","color":"white"}
+		]
+  },
+  "r10": {
+    "type": "origins:tooltip",
+    "order": -3,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/regeneration/c10"
+      }
+    },
+    "text": [
+			{"text":"🔄: ","color":"yellow"},{"text":"+100% Amount","color":"white"}
+		]
+  },
+  "r11": {
+    "type": "origins:tooltip",
+    "order": -3,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/regeneration/c11"
+      }
+    },
+    "text": [
+			{"text":"🔄: ","color":"yellow"},{"text":"+110% Amount","color":"white"}
+		]
+  },
+  "r12": {
+    "type": "origins:tooltip",
+    "order": -3,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/regeneration/c12"
+      }
+    },
+    "text": [
+			{"text":"🔄: ","color":"yellow"},{"text":"+120% Amount","color":"white"}
+		]
+  },
+  "r13": {
+    "type": "origins:tooltip",
+    "order": -3,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/regeneration/c13"
+      }
+    },
+    "text": [
+			{"text":"🔄: ","color":"yellow"},{"text":"+130% Amount","color":"white"}
+		]
+  },
+  "r14": {
+    "type": "origins:tooltip",
+    "order": -3,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/regeneration/c14"
+      }
+    },
+    "text": [
+			{"text":"🔄: ","color":"yellow"},{"text":"+140% Amount","color":"white"}
+		]
+  },
+  "r15": {
+    "type": "origins:tooltip",
+    "order": -3,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/regeneration/c15"
+      }
+    },
+    "text": [
+			{"text":"🔄: ","color":"yellow"},{"text":"+150% Amount","color":"white"}
+		]
+  },
+  "r16": {
+    "type": "origins:tooltip",
+    "order": -3,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/regeneration/c16"
+      }
+    },
+    "text": [
+			{"text":"🔄: ","color":"yellow"},{"text":"+160% Amount","color":"white"}
+		]
+  },
+  "r17": {
+    "type": "origins:tooltip",
+    "order": -3,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/regeneration/c17"
+      }
+    },
+    "text": [
+			{"text":"🔄: ","color":"yellow"},{"text":"+170% Amount","color":"white"}
+		]
+  },
+  "r18": {
+    "type": "origins:tooltip",
+    "order": -3,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/regeneration/c18"
+      }
+    },
+    "text": [
+			{"text":"🔄: ","color":"yellow"},{"text":"+180% Amount","color":"white"}
+		]
+  },
+  "r19": {
+    "type": "origins:tooltip",
+    "order": -3,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/regeneration/c19"
+      }
+    },
+    "text": [
+			{"text":"🔄: ","color":"yellow"},{"text":"+190% Amount","color":"white"}
+		]
+  },
+  "r20": {
+    "type": "origins:tooltip",
+    "order": -3,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/regeneration/c20"
+      }
+    },
+    "text": [
+			{"text":"🔄: ","color":"yellow"},{"text":"+200% Amount","color":"white"}
+		]
+  },
+  "r30": {
+    "type": "origins:tooltip",
+    "order": -3,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/regeneration/c30"
+      }
+    },
+    "text": [
+			{"text":"🔄: ","color":"yellow"},{"text":"+300% Amount","color":"white"}
+		]
+  }
+}

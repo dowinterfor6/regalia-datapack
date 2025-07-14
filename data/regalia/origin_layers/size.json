@@ -1,0 +1,17 @@
+{
+  "name": "Stature",
+  "order": 1,
+  "origins": [
+    "regalia:none",
+    "regalia:size/average",
+    "regalia:size/huge",
+    "regalia:size/large",
+    "regalia:size/small",
+    "regalia:size/short",
+    "regalia:size/tall",
+    "regalia:size/tiny"
+  ],
+  "default_origin": "regalia:size/average",
+  "allow_random": false,
+  "allow_random_unchoosable": false
+}

@@ -1,0 +1,19 @@
+{
+  "hidden": true,
+  "type": "origins:multiple",
+  "s_purge": {
+    "type": "origins:action_on_item_use",
+    "trigger": "finish",
+    "priority": 0,
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "regalia:food/special/purge"
+      }
+    },
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function regalia:logic/food/incoming/special/purge"
+    }
+  }
+}

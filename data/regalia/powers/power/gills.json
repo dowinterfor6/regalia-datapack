@@ -1,0 +1,25 @@
+{
+  "name": "Gills",
+  "description": "You have the ability to breath underwater.",
+  "type": "origins:multiple",
+  "oxygen": {
+		"type": "origins:action_over_time",
+		"interval": 20,
+		"entity_action": {
+			"type": "origins:gain_air",
+			"value": 30
+		},
+		"condition": {
+			"type": "origins:air",
+			"comparison": "<",
+			"compare_to": 300
+		}
+	},
+  "invulnerability": {
+    "type": "origins:invulnerability",
+    "damage_condition": {
+      "type": "origins:in_tag",
+      "tag": "regalia:drowning"
+    }
+  }
+}

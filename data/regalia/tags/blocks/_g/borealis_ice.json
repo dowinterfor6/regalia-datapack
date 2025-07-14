@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "biomeswevegone:borealis_ice", "required": false },
+    { "id": "biomeswevegone:packed_borealis_ice", "required": false }
+  ]
+}

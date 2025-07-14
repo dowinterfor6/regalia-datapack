@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "terrainslabs:packed_ice_slab", "required": false },
+    { "id": "yungscavebiomes:ice_sheet", "required": false },
+    { "id": "yungscavebiomes:rare_ice", "required": false }
+  ]
+}

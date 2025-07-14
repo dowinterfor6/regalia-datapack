@@ -1,0 +1,10 @@
+{
+  "name": "Category Buff Active",
+  "type": "origins:prevent_item_use",
+  "item_condition": {
+    "type": "origins:ingredient",
+    "ingredient": {
+      "tag": "regalia:food/category/snack"
+    }
+  }
+}

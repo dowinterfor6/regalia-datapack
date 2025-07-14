@@ -1,0 +1,64 @@
+{
+  "hidden": true,
+  "type": "origins:multiple",
+  "feed": {
+    "type": "origins:action_over_time",
+    "interval": 20,
+    "entity_action": {
+      "type": "origins:feed",
+      "food": 10,
+      "saturation": 10
+    },
+    "condition": {
+      "type": "origins:food_level",
+      "comparison": "<",
+      "compare_to": 20
+    }
+  },
+  "exhaustion": {
+    "type": "origins:modify_exhaustion",
+    "modifier": {
+      "operation": "multiply_total",
+      "value": -1.0
+    }
+  },
+  "diet": {
+    "type": "origins:modify_food",
+    "always_edible": true,
+    "item_condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:ingredient",
+          "ingredient": {
+            "tag": "regalia:food/track"
+          }
+        },
+        {
+          "type": "origins:food"
+        }
+      ]
+    },
+    "food_modifier": {
+      "operation": "multiply_total",
+      "value": -1.0
+    },
+    "saturation_modifier": {
+      "operation": "multiply_total",
+      "value": -1.0
+    }
+  },
+  "immunity": {
+    "type": "origins:invulnerability",
+    "damage_condition": {
+      "type": "origins:in_tag",
+      "tag": "regalia:starve"
+    }
+  },
+  "effects": {
+    "type": "origins:effect_immunity",
+    "effect": [
+      "minecraft:hunger"
+    ]
+  }
+}

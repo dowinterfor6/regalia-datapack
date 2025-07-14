@@ -1,0 +1,20 @@
+{
+  "sends_telemetry_event": false,
+  "parent": "regalia:_logic/root",
+  "criteria": {
+	  "enter": {
+	    "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "minecraft:overworld"
+      }
+	  }
+  },
+  "requirements": [
+    [
+	    "enter"
+	  ]
+  ],
+  "rewards": {
+    "function": "regalia:logic/players/dimension/overworld"
+  }
+}

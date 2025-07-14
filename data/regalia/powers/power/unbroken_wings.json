@@ -1,0 +1,32 @@
+{
+  "name": "Unbroken Wings",
+  "description": "Worn Elytras recover durability during use.",
+  "type": "origins:action_over_time",
+  "interval": 15,
+  "entity_action": {
+    "type": "origins:equipped_item_action",
+    "equipment_slot": "chest",
+    "action": {
+      "type": "origins:modify",
+      "modifier": "regalia:unbroken_wings/repair"
+    }
+  },
+  "condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:equipped_item",
+        "equipment_slot": "chest",
+        "item_condition": {
+          "type": "origins:ingredient",
+          "ingredient": {
+            "tag": "regalia:_g/elytra"
+          }
+        }
+      },
+      {
+        "type": "origins:fall_flying"
+      }
+    ]
+  }
+}

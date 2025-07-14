@@ -1,0 +1,43 @@
+{
+  "name": "Frozen Over",
+  "description": "Being in cold conditions provides natural Armor.",
+  "type": "origins:multiple",
+  "attribute": {
+    "type": "origins:conditioned_attribute",
+    "modifiers": [
+      {
+        "attribute": "minecraft:generic.armor",
+        "operation": "addition",
+        "value": 2.0
+      }
+    ],
+    "condition": {
+      "type": "origins:or",
+      "conditions": [
+        {
+          "type": "origins:biome",
+          "condition": {
+            "type": "origins:in_tag",
+            "tag": "regalia:is_cold"
+          }
+        },
+        {
+          "type": "origins:in_block_anywhere",
+          "block_condition": {
+            "type": "origins:in_tag",
+            "tag": "regalia:power/frozen_over/triggers"
+          },
+          "comparison": ">=",
+          "compare_to": 1
+        }
+      ]
+    }
+  },
+  "invulnerability": {
+    "type": "origins:invulnerability",
+    "damage_condition": {
+      "type": "origins:in_tag",
+      "tag": "regalia:freezing"
+    }
+  }
+}

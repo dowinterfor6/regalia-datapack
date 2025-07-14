@@ -1,0 +1,44 @@
+{
+  "name": "Death From Above",
+  "description": "Whilst in flight, deal 25% more Melee damage and 10% more Range damage.",
+  "type": "origins:multiple",
+  "range": {
+    "type": "origins:modify_projectile_damage",
+    "modifier": {
+      "operation": "multiply_total",
+      "value": 0.1
+    },
+    "condition": {
+      "type": "origins:or",
+      "conditions": [
+        {
+          "type": "origins:fall_flying"
+        },
+        {
+          "type": "origins:creative_flying"
+        }
+      ]
+    }
+  },
+  "melee": {
+    "type": "origins:conditioned_attribute",
+    "modifiers": [
+      {
+        "attribute": "minecraft:generic.attack_damage",
+        "operation": "multiply_total",
+        "value": 0.25
+      }
+    ],
+    "condition": {
+      "type": "origins:or",
+      "conditions": [
+        {
+          "type": "origins:fall_flying"
+        },
+        {
+          "type": "origins:creative_flying"
+        }
+      ]
+    }
+  }
+}

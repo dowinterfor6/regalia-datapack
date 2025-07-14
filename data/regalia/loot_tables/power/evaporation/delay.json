@@ -1,0 +1,165 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:clay",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{value:200}"
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:clay",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{value:220}"
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:clay",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{value:240}"
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:clay",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{value:260}"
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:clay",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{value:280}"
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:clay",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{value:300}"
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:clay",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{value:320}"
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:clay",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{value:340}"
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:clay",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{value:360}"
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:clay",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{value:380}"
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:clay",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{value:400}"
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

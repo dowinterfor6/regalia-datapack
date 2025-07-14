@@ -1,0 +1,37 @@
+{
+  "hidden": true,
+  "type": "origins:multiple",
+  "status": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "start_value": 0
+  },
+  "logic": {
+    "type": "origins:prevent_sprinting",
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:resource",
+          "resource": "regalia:human/sprinting_status",
+          "comparison": "==",
+          "compare_to": 0
+        },
+        {
+          "type": "origins:or",
+          "conditions": [
+            {
+              "type": "origins:gamemode",
+              "gamemode": "survival"
+            },
+            {
+              "type": "origins:gamemode",
+              "gamemode": "adventure"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

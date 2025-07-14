@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "#regalia:food/category/drink",
+    "#regalia:food/category/meal",
+    "#regalia:food/category/none",
+    "#regalia:food/category/side",
+    "#regalia:food/category/snack"
+  ]
+}

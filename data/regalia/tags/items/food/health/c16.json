@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "farmersdelight:baked_cod_stew", "required": false },
+    { "id": "farmersdelight:grilled_salmon", "required": false },
+    { "id": "farmersdelight:honey_glazed_ham_block", "required": false },
+    { "id": "farmersdelight:honey_glazed_ham", "required": false },
+    { "id": "farmersdelight:pumpkin_soup", "required": false },
+    { "id": "farmersdelight:roast_chicken", "required": false },
+    { "id": "farmersdelight:roast_chicken_block", "required": false },
+    { "id": "farmersdelight:shepherds_pie", "required": false },
+    { "id": "farmersdelight:shepherds_pie_block", "required": false },
+    { "id": "farmersdelight:squid_ink_pasta", "required": false },
+    { "id": "farmersdelight:stuffed_pumpkin", "required": false },
+    { "id": "farmersdelight:stuffed_pumpkin_block", "required": false },
+    { "id": "farmersdelight:vegetable_noodles", "required": false },
+    { "id": "netherexp:nether_pizza", "required": false },
+    { "id": "netherexp:nether_pizza_slice", "required": false },
+    { "id": "rusticdelight:fried_dumplings", "required": false }
+  ]
+}

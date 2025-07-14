@@ -1,0 +1,90 @@
+{
+  "sends_telemetry_event": false,
+  "parent": "regalia:element/water/tier_1",
+  "display": {
+    "icon": {
+      "item": "minecraft:ghast_tear"
+    },
+    "title": [
+      [{"text":"Splashing Waves"}]
+    ],
+    "description": [
+      [{"text":"Remain attuned to the ","color":"gray"}],
+      [{"text":"Water Affinity","color":"gold"}],
+      [{"text":" for ","color":"gray"}],
+      [{"text":"30 days","color":"white"}],
+      [{"text":".","color":"gray"}]
+    ],
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+	  "day_1": { "trigger": "minecraft:impossible" },
+	  "day_2": { "trigger": "minecraft:impossible" },
+	  "day_3": { "trigger": "minecraft:impossible" },
+	  "day_4": { "trigger": "minecraft:impossible" },
+	  "day_5": { "trigger": "minecraft:impossible" },
+	  "day_6": { "trigger": "minecraft:impossible" },
+	  "day_7": { "trigger": "minecraft:impossible" },
+	  "day_8": { "trigger": "minecraft:impossible" },
+	  "day_9": { "trigger": "minecraft:impossible" },
+	  "day_10": { "trigger": "minecraft:impossible" },
+	  "day_11": { "trigger": "minecraft:impossible" },
+	  "day_12": { "trigger": "minecraft:impossible" },
+	  "day_13": { "trigger": "minecraft:impossible" },
+	  "day_14": { "trigger": "minecraft:impossible" },
+	  "day_15": { "trigger": "minecraft:impossible" },
+	  "day_16": { "trigger": "minecraft:impossible" },
+	  "day_17": { "trigger": "minecraft:impossible" },
+	  "day_18": { "trigger": "minecraft:impossible" },
+	  "day_19": { "trigger": "minecraft:impossible" },
+	  "day_20": { "trigger": "minecraft:impossible" },
+	  "day_21": { "trigger": "minecraft:impossible" },
+	  "day_22": { "trigger": "minecraft:impossible" },
+	  "day_23": { "trigger": "minecraft:impossible" },
+	  "day_24": { "trigger": "minecraft:impossible" },
+	  "day_25": { "trigger": "minecraft:impossible" },
+	  "day_26": { "trigger": "minecraft:impossible" },
+	  "day_27": { "trigger": "minecraft:impossible" },
+	  "day_28": { "trigger": "minecraft:impossible" },
+	  "day_29": { "trigger": "minecraft:impossible" },
+	  "day_30": { "trigger": "minecraft:impossible" }
+  },
+  "requirements": [
+    [ "day_1" ],
+    [ "day_2" ],
+    [ "day_3" ],
+    [ "day_4" ],
+    [ "day_5" ],
+    [ "day_6" ],
+    [ "day_7" ],
+    [ "day_8" ],
+    [ "day_9" ],
+    [ "day_10" ],
+    [ "day_11" ],
+    [ "day_12" ],
+    [ "day_13" ],
+    [ "day_14" ],
+    [ "day_15" ],
+    [ "day_16" ],
+    [ "day_17" ],
+    [ "day_18" ],
+    [ "day_19" ],
+    [ "day_20" ],
+    [ "day_21" ],
+    [ "day_22" ],
+    [ "day_23" ],
+    [ "day_24" ],
+    [ "day_25" ],
+    [ "day_26" ],
+    [ "day_27" ],
+    [ "day_28" ],
+    [ "day_29" ],
+    [ "day_30" ]
+  ],
+  "rewards": {
+    "function": "regalia:logic/unlocks/water/tier_2"
+  }
+}

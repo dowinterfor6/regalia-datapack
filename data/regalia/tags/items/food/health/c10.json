@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:rabbit_stew",
+    { "id": "farmersdelight:fruit_salad", "required": false },
+    { "id": "farmersdelight:barbecue_stick", "required": false },
+    { "id": "farmersdelight:dumplings", "required": false },
+    { "id": "rusticdelight:stuffed_bell_pepper_green", "required": false },
+    { "id": "rusticdelight:stuffed_bell_pepper_yellow", "required": false },
+    { "id": "rusticdelight:stuffed_bell_pepper_red", "required": false }
+  ]
+}

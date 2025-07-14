@@ -1,0 +1,3 @@
+## with_the_tides - message/grant
+tellraw @s [{"text":" [> ","color":"dark_aqua"},{"text":"The ","color":"white"},{"text":"Moon's Blessing","color":"gold"},{"text":" [","color":"gold"},{"nbt":"temp.name","storage":"regalia:data","interpret":false,"color":"yellow"},{"text":"]","color":"gold"},{"text":" enters your body.","color":"white"}]
+playsound minecraft:block.beacon.power_select player @s ~ ~ ~ 1.0 0.8

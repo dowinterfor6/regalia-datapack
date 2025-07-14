@@ -1,0 +1,231 @@
+{
+  "name": "Eruption [10⌛]",
+  "description": "§e[Key] = 'Secondary Power'§r\nUpon activation; launch high into the air, creating a lava spill where you land. Potency increased if in Lava when activating.",
+  "type": "origins:multiple",
+  "data_active": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 5,
+    "start_value": 0
+  },
+  "data_cooldown": {
+    "type": "origins:resource",
+    "min": -1,
+    "max": 200,
+    "start_value": 0,
+    "hud_render": {
+      "should_render": true,
+      "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+      "bar_index": 16,
+      "inverted": true,
+      "condition": {
+        "type": "origins:resource",
+        "resource": "regalia:power/eruption_data_cooldown",
+        "comparison": ">=",
+        "compare_to": 1
+      }
+    }
+  },
+  "trigger": {
+    "type": "origins:active_self",
+    "key": {
+      "key": "key.origins.secondary_active"
+    },
+    "cooldown": 5,
+    "entity_action": {
+      "type": "origins:if_else_list",
+      "actions": [
+        {
+          "action": {
+            "type": "origins:and",
+            "actions": [
+              {
+                "type": "origins:execute_command",
+                "command": "function regalia:logic/power/eruption/trigger/t2"
+              },
+              {
+                "type": "origins:apply_effect",
+                "effects": [
+                  {
+                    "effect": "minecraft:levitation",
+                    "duration": 5,
+                    "amplifier": 64,
+                    "is_ambient": false,
+                    "show_particles": false,
+                    "show_icon": false
+                  }
+                ]
+              }
+            ]
+          },
+          "condition": {
+            "type": "origins:and",
+            "conditions": [
+              {
+                "type": "origins:resource",
+                "resource": "regalia:power/eruption_data_cooldown",
+                "comparison": "==",
+                "compare_to": 0
+              },
+              {
+                "type": "origins:fluid_height",
+                "fluid": "minecraft:lava",
+                "comparison": "==",
+                "compare_to": 0.0,
+                "inverted": true
+              }
+            ]
+          }
+        },
+        {
+          "action": {
+            "type": "origins:and",
+            "actions": [
+              {
+                "type": "origins:execute_command",
+                "command": "function regalia:logic/power/eruption/trigger/t1"
+              },
+              {
+                "type": "origins:apply_effect",
+                "effects": [
+                  {
+                    "effect": "minecraft:levitation",
+                    "duration": 5,
+                    "amplifier": 44,
+                    "is_ambient": false,
+                    "show_particles": false,
+                    "show_icon": false
+                  }
+                ]
+              }
+            ]
+          },
+          "condition": {
+            "type": "origins:and",
+            "conditions": [
+              {
+                "type": "origins:resource",
+                "resource": "regalia:power/eruption_data_cooldown",
+                "comparison": "==",
+                "compare_to": 0
+              }
+            ]
+          }
+        },
+        {
+          "action": {
+            "type": "origins:execute_command",
+            "command": "function regalia:logic/power/_g/fail"
+          },
+          "condition": {
+            "type": "origins:exists"
+          }
+        }
+      ]
+    }
+  },
+  "immunity": {
+    "type": "origins:invulnerability",
+    "damage_condition": {
+      "type": "origins:in_tag",
+      "tag": "regalia:falling"
+    },
+    "condition": {
+      "type": "origins:resource",
+      "resource": "regalia:power/eruption_data_active",
+      "comparison": "==",
+      "compare_to": 1
+    }
+  },
+  "tick_cooldown": {
+    "type": "origins:action_over_time",
+    "interval": 1,
+    "entity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:change_resource",
+          "resource": "regalia:power/eruption_data_cooldown",
+          "operation": "add",
+          "change": -1
+        }
+      ]
+    },
+    "condition": {
+      "type": "origins:resource",
+      "resource": "regalia:power/eruption_data_cooldown",
+      "comparison": ">=",
+      "compare_to": 1
+    }
+  },
+  "tick_active": {
+    "type": "origins:action_over_time",
+    "interval": 1,
+    "entity_action": {
+      "type": "origins:if_else_list",
+      "actions": [
+        {
+          "action": {
+            "type": "origins:change_resource",
+            "resource": "regalia:power/eruption_data_active",
+            "operation": "add",
+            "change": -1
+          },
+          "condition": {
+            "type": "origins:resource",
+            "resource": "regalia:power/eruption_data_active",
+            "comparison": ">=",
+            "compare_to": 2
+          }
+        },
+        {
+          "action": {
+            "type": "origins:execute_command",
+            "command": "function regalia:logic/power/eruption/land/abort"
+          },
+          "condition": {
+            "type": "origins:or",
+            "conditions": [
+              {
+                "type": "origins:fall_flying"
+              },
+              {
+                "type": "origins:creative_flying"
+              },
+              {
+                "type": "origins:climbing"
+              },
+              {
+                "type": "origins:fluid_height",
+                "fluid": "minecraft:lava",
+                "comparison": ">",
+                "compare_to": 0.0
+              },
+              {
+                "type": "origins:fluid_height",
+                "fluid": "minecraft:water",
+                "comparison": ">",
+                "compare_to": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "action": {
+            "type": "origins:execute_command",
+            "command": "function regalia:logic/power/eruption/land/success"
+          },
+          "condition": {
+            "type": "origins:on_block"
+          }
+        }
+      ]
+    },
+    "condition": {
+      "type": "origins:resource",
+      "resource": "regalia:power/eruption_data_active",
+      "comparison": ">=",
+      "compare_to": 1
+    }
+  }
+}

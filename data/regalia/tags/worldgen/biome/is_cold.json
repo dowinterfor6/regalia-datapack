@@ -1,0 +1,30 @@
+{
+  "values": [
+    "minecraft:cold_ocean",
+    "minecraft:deep_cold_ocean",
+    "minecraft:deep_frozen_ocean",
+    "minecraft:frozen_ocean",
+    "minecraft:frozen_peaks",
+    "minecraft:frozen_river",
+    "minecraft:ice_spikes",
+    "minecraft:snowy_beach",
+    "minecraft:snowy_plains",
+    "minecraft:snowy_slopes",
+    "minecraft:snowy_taiga",
+    { "id": "biomeswevegone:frosted_coniferous_forest", "required": false },
+    { "id": "biomeswevegone:frosted_taiga", "required": false },
+    { "id": "terralith:cave/ice_caves", "required": false },
+    { "id": "terralith:cold_shrubland", "required": false },
+    { "id": "terralith:frozen_cliffs", "required": false },
+    { "id": "terralith:glacial_chasm", "required": false },
+    { "id": "terralith:ice_marsh", "required": false },
+    { "id": "terralith:skylands_winter", "required": false },
+    { "id": "terralith:snowy_badlands", "required": false },
+    { "id": "terralith:snowy_cherry_grove", "required": false },
+    { "id": "terralith:snowy_maple_forest", "required": false },
+    { "id": "terralith:snowy_shield", "required": false },
+    { "id": "terralith:wintry_forest", "required": false },
+    { "id": "terralith:wintry_lowlands", "required": false },
+    { "id": "yungscavebiomes:frosted_caves", "required": false }
+  ]
+}

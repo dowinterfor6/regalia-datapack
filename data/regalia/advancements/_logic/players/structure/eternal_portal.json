@@ -1,0 +1,27 @@
+{
+  "sends_telemetry_event": false,
+  "parent": "regalia:_logic/root",
+  "criteria": {
+	  "enter": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "structure": "betterend:eternal_portal"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+	    "enter"
+	  ]
+  ],
+  "rewards": {
+    "function": "regalia:logic/players/structure/eternal_portal"
+  }
+}

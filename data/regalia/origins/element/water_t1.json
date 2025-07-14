@@ -1,0 +1,17 @@
+{
+  "name": "Water [☀1]",
+  "description": "Going with the flow.",
+  "icon": "minecraft:ghast_tear",
+  "powers": [
+    "regalia:config/element/water",
+    "regalia:power/salmon_run",
+    "regalia:power/moisturized",
+    "regalia:power/frozen_over",
+    "regalia:locked/with_the_tides",
+    "regalia:locked/gills",
+    "regalia:locked/evaporation"
+  ],
+  "order": 4,
+  "impact": 0,
+  "unchoosable": false
+}

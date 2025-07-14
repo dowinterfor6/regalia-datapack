@@ -1,0 +1,16 @@
+{
+  "name": "Fire [☀2]",
+  "description": "Strong with rage.",
+  "icon": "minecraft:blaze_powder",
+  "powers": [
+    "regalia:config/element/fire",
+    "regalia:power/running_hot",
+    "regalia:power/eruption",
+    "regalia:power/fueled",
+    "regalia:power/we_all_burn_together",
+    "regalia:power/smothered"
+  ],
+  "order": 2,
+  "impact": 0,
+  "unchoosable": true
+}

@@ -1,0 +1,187 @@
+{
+  "name": "Combat Roll",
+  "description": "§e[Key] = 'Save Toolbar'§r\nPreform an evasive roll in the direction you are looking.",
+  "data_active": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 10,
+    "start_value": 0
+  },
+  "type": "origins:multiple",
+  "data_cooldown": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 140,
+    "start_value": 0,
+    "hud_render": {
+      "should_render": true,
+      "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+      "bar_index": 20,
+      "inverted": true,
+      "condition": {
+        "type": "origins:resource",
+        "resource": "regalia:power/combat_roll_data_cooldown",
+        "comparison": ">=",
+        "compare_to": 1
+      }
+    }
+  },
+  "trigger": {
+    "type": "origins:active_self",
+    "key": {
+      "key": "key.saveToolbarActivator"
+    },
+    "cooldown": 5,
+    "entity_action": {
+      "type": "origins:if_else",
+      "if_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:execute_command",
+            "command": "function regalia:logic/power/combat_roll/trigger"
+          },
+          {
+            "type": "origins:exhaust",
+            "amount": 0.22
+          },
+          {
+            "type": "origins:add_velocity",
+            "space": "local_horizontal",
+            "set": false,
+            "z": 0.65
+          },
+          {
+            "type": "origins:add_velocity",
+            "space": "world",
+            "set": false,
+            "y": 0.1
+          }
+        ]
+      },
+      "condition": {
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type": "origins:resource",
+            "resource": "regalia:power/combat_roll_data_cooldown",
+            "comparison": "==",
+            "compare_to": 0
+          },
+          {
+            "type": "origins:on_block"
+          },
+          {
+            "type": "origins:fluid_height",
+            "fluid": "minecraft:water",
+            "comparison": "==",
+            "compare_to": 0.0
+          }
+        ]
+      }
+    }
+  },
+  "invulnerable": {
+    "type": "origins:invulnerability",
+    "damage_condition": {
+      "type": "origins:in_tag",
+      "tag": "regalia:bypass_all",
+      "inverted": true
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:resource",
+          "resource": "regalia:power/combat_roll_data_active",
+          "comparison": ">=",
+          "compare_to": 1
+        }
+      ]
+    }
+  },
+  "tick_active": {
+    "type": "origins:action_over_time",
+    "interval": 1,
+    "entity_action": {
+      "type": "origins:if_else_list",
+      "actions": [
+        {
+          "action": {
+            "type": "origins:execute_command",
+            "command": "function regalia:logic/power/combat_roll/expire"
+          },
+          "condition": {
+            "type": "origins:and",
+            "conditions": [
+              {
+                "type": "origins:resource",
+                "resource": "regalia:power/combat_roll_data_active",
+                "comparison": "==",
+                "compare_to": 1
+              },
+              {
+                "type": "origins:or",
+                "conditions": [
+                  {
+                    "type": "origins:on_block"
+                  },
+                  {
+                    "type": "origins:fluid_height",
+                    "fluid": "minecraft:water",
+                    "comparison": "==",
+                    "compare_to": 0.0
+                  },
+                  {
+                    "type": "origins:fall_flying"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "action": {
+            "type": "origins:change_resource",
+            "resource": "regalia:power/combat_roll_data_active",
+            "operation": "add",
+            "change": -1
+          },
+          "condition": {
+            "type": "origins:resource",
+            "resource": "regalia:power/combat_roll_data_active",
+            "comparison": ">=",
+            "compare_to": 2
+          }
+        }
+      ]
+    },
+    "condition": {
+      "type": "origins:resource",
+      "resource": "regalia:power/combat_roll_data_active",
+      "comparison": ">=",
+      "compare_to": 1
+    }
+  },
+  "tick_cooldown": {
+    "type": "origins:action_over_time",
+    "interval": 1,
+    "entity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:change_resource",
+          "resource": "regalia:power/combat_roll_data_cooldown",
+          "operation": "add",
+          "change": -1
+        }
+      ]
+    },
+    "condition": {
+      "type": "origins:resource",
+      "resource": "regalia:power/combat_roll_data_cooldown",
+      "comparison": ">=",
+      "compare_to": 1
+    }
+  }
+}

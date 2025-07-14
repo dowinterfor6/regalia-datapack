@@ -1,0 +1,8 @@
+{
+  "sends_telemetry_event": false,
+  "criteria": {
+	"hi_there": {
+	  "trigger": "minecraft:impossible"
+	}
+  }
+}

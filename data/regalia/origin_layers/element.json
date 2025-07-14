@@ -1,0 +1,50 @@
+{
+  "name": "Element Affinity",
+  "order": 2,
+  "origins": [
+    "regalia:none",
+    {
+      "origins": [
+        "regalia:element/air_t1"
+      ],
+      "condition": {
+        "type": "origins:advancement",
+        "advancement": "regalia:element/air/tier_1"
+      }
+    },
+    {
+      "origins": [
+        "regalia:element/earth_t1"
+      ],
+      "condition": {
+        "type": "origins:advancement",
+        "advancement": "regalia:element/earth/tier_1"
+      }
+    },
+    {
+      "origins": [
+        "regalia:element/fire_t1"
+      ],
+      "condition": {
+        "type": "origins:advancement",
+        "advancement": "regalia:element/fire/tier_1"
+      }
+    },
+    {
+      "origins": [
+        "regalia:element/water_t1"
+      ],
+      "condition": {
+        "type": "origins:advancement",
+        "advancement": "regalia:element/water/tier_1"
+      }
+    },
+    "regalia:element/air_t2",
+    "regalia:element/earth_t2",
+    "regalia:element/fire_t2",
+    "regalia:element/water_t2"
+  ],
+  "default_origin": "regalia:none",
+  "allow_random": false,
+  "allow_random_unchoosable": false
+}

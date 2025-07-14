@@ -1,0 +1,13 @@
+{
+  "name": "Tall",
+  "description": "Just a bit above average.",
+  "icon": "minecraft:glass",
+  "powers": [
+    "regalia:s_tall/config",
+    "regalia:s_tall/attributes",
+    "regalia:s_tall/falling_damage"
+  ],
+  "order": 5,
+  "impact": 0,
+  "unchoosable": false
+}

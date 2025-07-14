@@ -1,0 +1,35 @@
+{
+  "sends_telemetry_event": false,
+  "parent": "regalia:_logic/root",
+  "criteria": {
+	  "placed": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "tag": "regalia:_g/end_portal_frame"
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "tag": "regalia:_g/ender_eye"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+	    "placed"
+	  ]
+  ],
+  "rewards": {
+    "function": "regalia:logic/block/end_portal/fill/_m"
+  }
+}

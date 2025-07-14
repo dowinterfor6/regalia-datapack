@@ -1,0 +1,6 @@
+## food - incoming/prompt
+# prepare
+scoreboard players set $dataA rga.data 0
+scoreboard players add $calc.food.special rga.data 0
+# debug
+execute if score $debug rga.settings matches 1 run tellraw @a[tag=rga.admin] [{"text":" [D> ","color":"yellow"},{"text":"FOOD: Consumption for ","color":"gray"},{"text":"Target [","color":"white"},{"selector":"@s","color":"aqua"},{"text":"]","color":"white"},{"text":" with ","color":"gray"},{"text":"Incoming [","color":"white"},{"score":{"objective":"rga.data","name":"$calc.food.category"},"color":"aqua"},{"text":"c ","color":"green"},{"score":{"objective":"rga.data","name":"$calc.food.health"},"color":"aqua"},{"text":"h ","color":"green"},{"score":{"objective":"rga.data","name":"$calc.food.regeneration"},"color":"aqua"},{"text":"r ","color":"green"},{"score":{"objective":"rga.data","name":"$calc.food.duration"},"color":"aqua"},{"text":"d ","color":"green"},{"score":{"objective":"rga.data","name":"$calc.food.special"},"color":"aqua"},{"text":"s","color":"green"},{"text":"]","color":"white"}]

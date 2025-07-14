@@ -1,0 +1,13 @@
+{
+  "name": "Tiny",
+  "description": "You barely catch the attention of anything.",
+  "icon": "minecraft:glass",
+  "powers": [
+    "regalia:s_tiny/config",
+    "regalia:s_tiny/attributes",
+    "regalia:s_tiny/falling_damage"
+  ],
+  "order": 1,
+  "impact": 0,
+  "unchoosable": false
+}

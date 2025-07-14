@@ -1,0 +1,87 @@
+{
+  "hidden": true,
+  "type": "origins:multiple",
+  "display": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 100,
+    "start_value": 0,
+    "hud_render": {
+      "should_render": true,
+      "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+      "bar_index": 4,
+      "inverted": true,
+      "condition": {
+        "type": "origins:resource",
+        "resource": "regalia:human/regeneration_display",
+        "comparison": ">=",
+        "compare_to": 1
+      }
+    }
+  },
+  "status": {
+    "type": "origins:action_over_time",
+    "interval": 1,
+    "rising_action": {
+      "type": "origins:execute_command",
+      "command": "function regalia:logic/players/regeneration/status/on"
+    },
+    "falling_action": {
+      "type": "origins:execute_command",
+      "command": "function regalia:logic/players/regeneration/status/off"
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:relative_health",
+          "comparison": "==",
+          "compare_to": 1.0,
+          "inverted": true
+        },
+        {
+          "type": "origins:scoreboard",
+          "objective": "rga.config.regeneration.amount",
+          "comparison": ">=",
+          "compare_to": 1
+        },
+        {
+          "type": "origins:scoreboard",
+          "objective": "rga.config.regeneration.delay",
+          "comparison": ">=",
+          "compare_to": 1
+        },
+        {
+          "type": "origins:scoreboard",
+          "objective": "rga.regeneration.interupt",
+          "comparison": ">=",
+          "compare_to": 0,
+          "inverted": true
+        },
+        {
+          "type": "origins:scoreboard",
+          "objective": "rga.regeneration.status",
+          "comparison": "==",
+          "compare_to": -1,
+          "inverted": true
+        }
+      ]
+    }
+  },
+  "interupt": {
+    "type": "origins:action_when_damage_taken",
+    "cooldown": 5,
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function regalia:logic/players/regeneration/interupt/trigger"
+    },
+    "damage_condition": {
+      "type": "origins:in_tag",
+      "tag": "regalia:bypass_all",
+      "inverted": true
+    }
+  },
+  "prevent": {
+    "type": "origins:disable_regen"
+  }
+}

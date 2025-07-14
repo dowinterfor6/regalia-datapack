@@ -1,0 +1,11 @@
+{
+  "hidden": true,
+  "type": "origins:attribute",
+  "modifiers": [
+    {
+      "attribute": "minecraft:generic.attack_damage",
+      "operation": "multiply_total",
+      "value": 0.5
+    }
+  ]
+}

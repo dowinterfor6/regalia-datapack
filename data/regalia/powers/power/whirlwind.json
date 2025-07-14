@@ -1,0 +1,94 @@
+{
+  "name": "Whirlwind [60⌛]",
+  "description": "§e[Key] = 'Secondary Power'§r\nUpon activation; fling all nearby creatures away with a levitating blast.",
+  "type": "origins:multiple",
+  "data_cooldown": {
+    "type": "origins:resource",
+    "min": -1,
+    "max": 1200,
+    "start_value": 0,
+    "hud_render": {
+      "should_render": true,
+      "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+      "bar_index": 8,
+      "inverted": true,
+      "condition": {
+        "type": "origins:resource",
+        "resource": "regalia:power/whirlwind_data_cooldown",
+        "comparison": ">=",
+        "compare_to": 1
+      }
+    }
+  },
+  "trigger": {
+    "type": "origins:active_self",
+    "key": {
+      "key": "key.origins.secondary_active"
+    },
+    "cooldown": 5,
+    "entity_action": {
+      "type": "origins:if_else",
+      "if_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:execute_command",
+            "command": "function regalia:logic/power/whirlwind/trigger"
+          },
+          {
+            "type": "origins:selector",
+            "selector": "@e[type=!#regalia:_g/untargetable,distance=0.001..8.0]",
+            "bientity_action": {
+              "type": "origins:and",
+              "actions": [
+                {
+                  "type": "origins:target_action",
+                  "action": {
+                    "type": "origins:execute_command",
+                    "command": "function regalia:logic/power/whirlwind/push"
+                  }
+                },
+                {
+                  "type": "origins:add_velocity",
+                  "set": true,
+                  "z": 2.0
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "else_action": {
+        "type": "origins:execute_command",
+        "command": "function regalia:logic/power/_g/fail"
+      },
+      "condition": {
+        "type": "origins:resource",
+        "resource": "regalia:power/whirlwind_data_cooldown",
+        "comparison": "==",
+        "compare_to": 0
+      }
+    }
+  },
+  "tick_cooldown": {
+    "type": "origins:action_over_time",
+    "interval": 1,
+    "entity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:change_resource",
+          "resource": "regalia:power/whirlwind_data_cooldown",
+          "operation": "add",
+          "change": -1
+        }
+      ]
+    },
+    "condition": {
+      "type": "origins:resource",
+      "resource": "regalia:power/whirlwind_data_cooldown",
+      "comparison": ">=",
+      "compare_to": 1
+    }
+  }
+}

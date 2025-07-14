@@ -1,0 +1,30 @@
+{
+  "sends_telemetry_event": false,
+  "parent": "regalia:_logic/root",
+  "criteria": {
+	  "placed": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "tag": "regalia:ice/nether_melt"
+              },
+              "dimension": "minecraft:the_nether"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+	    "placed"
+	  ]
+  ],
+  "rewards": {
+    "function": "regalia:logic/block/ice/place/_m"
+  }
+}

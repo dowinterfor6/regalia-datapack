@@ -1,0 +1,202 @@
+{
+	"hidden": true,
+	"type": "origins:multiple",
+	"key_advancements": {
+		"type": "origins:active_self",
+		"key": "key.advancements",
+		"cooldown": 1,
+		"entity_action": {
+			"type": "origins:execute_command",
+			"command": "function regalia:logic/login/awake"
+		}
+	},
+	"key_attack": {
+		"type": "origins:active_self",
+		"key": "key.attack",
+		"cooldown": 1,
+		"entity_action": {
+			"type": "origins:execute_command",
+			"command": "function regalia:logic/login/awake"
+		}
+	},
+	"key_back": {
+		"type": "origins:active_self",
+		"key": "key.back",
+		"cooldown": 1,
+		"entity_action": {
+			"type": "origins:execute_command",
+			"command": "function regalia:logic/login/awake"
+		}
+	},
+	"key_chat": {
+		"type": "origins:active_self",
+		"key": "key.chat",
+		"cooldown": 1,
+		"entity_action": {
+			"type": "origins:execute_command",
+			"command": "function regalia:logic/login/awake"
+		}
+	},
+	"key_command": {
+		"type": "origins:active_self",
+		"key": "key.command",
+		"cooldown": 1,
+		"entity_action": {
+			"type": "origins:execute_command",
+			"command": "function regalia:logic/login/awake"
+		}
+	},
+	"key_drop": {
+		"type": "origins:active_self",
+		"key": "key.drop",
+		"cooldown": 1,
+		"entity_action": {
+			"type": "origins:execute_command",
+			"command": "function regalia:logic/login/awake"
+		}
+	},
+	"key_forward": {
+		"type": "origins:active_self",
+		"key": "key.forward",
+		"cooldown": 1,
+		"entity_action": {
+			"type": "origins:execute_command",
+			"command": "function regalia:logic/login/awake"
+		}
+	},
+	"key_inventory": {
+		"type": "origins:active_self",
+		"key": "key.inventory",
+		"cooldown": 1,
+		"entity_action": {
+			"type": "origins:execute_command",
+			"command": "function regalia:logic/login/awake"
+		}
+	},
+	"key_jump": {
+		"type": "origins:active_self",
+		"key": "key.jump",
+		"cooldown": 1,
+		"entity_action": {
+			"type": "origins:execute_command",
+			"command": "function regalia:logic/login/awake"
+		}
+	},
+	"key_left": {
+		"type": "origins:active_self",
+		"key": "key.left",
+		"cooldown": 1,
+		"entity_action": {
+			"type": "origins:execute_command",
+			"command": "function regalia:logic/login/awake"
+		}
+	},
+	"key_loadtoolbaractivator": {
+		"type": "origins:active_self",
+		"key": "key.loadToolbarActivator",
+		"cooldown": 1,
+		"entity_action": {
+			"type": "origins:execute_command",
+			"command": "function regalia:logic/login/awake"
+		}
+	},
+	"key_offhand": {
+		"type": "origins:active_self",
+		"key": "key.swapOffhand",
+		"cooldown": 1,
+		"entity_action": {
+			"type": "origins:execute_command",
+			"command": "function regalia:logic/login/awake"
+		}
+	},
+	"key_pickitem": {
+		"type": "origins:active_self",
+		"key": "key.pickItem",
+		"cooldown": 1,
+		"entity_action": {
+			"type": "origins:execute_command",
+			"command": "function regalia:logic/login/awake"
+		}
+	},
+	"key_primaryactive": {
+		"type": "origins:active_self",
+		"key": "key.origins.primary_active",
+		"cooldown": 1,
+		"entity_action": {
+			"type": "origins:execute_command",
+			"command": "function regalia:logic/login/awake"
+		}
+	},
+	"hey_right": {
+		"type": "origins:active_self",
+		"key": "key.right",
+		"cooldown": 1,
+		"entity_action": {
+			"type": "origins:execute_command",
+			"command": "function regalia:logic/login/awake"
+		}
+	},
+	"key_savetoolbaractivator": {
+		"type": "origins:active_self",
+		"key": "key.saveToolbarActivator",
+		"cooldown": 1,
+		"entity_action": {
+			"type": "origins:execute_command",
+			"command": "function regalia:logic/login/awake"
+		}
+	},
+	"key_screenshot": {
+		"type": "origins:active_self",
+		"key": "key.screenshot",
+		"cooldown": 1,
+		"entity_action": {
+			"type": "origins:execute_command",
+			"command": "function regalia:logic/login/awake"
+		}
+	},
+	"key_secondaryactive": {
+		"type": "origins:active_self",
+		"key": "key.origins.secondary_active",
+		"cooldown": 1,
+		"entity_action": {
+			"type": "origins:execute_command",
+			"command": "function regalia:logic/login/awake"
+		}
+	},
+	"key_sprint": {
+		"type": "origins:active_self",
+		"key": "key.sprint",
+		"cooldown": 1,
+		"entity_action": {
+			"type": "origins:execute_command",
+			"command": "function regalia:logic/login/awake"
+		}
+	},
+	"key_sneak": {
+		"type": "origins:active_self",
+		"key": "key.sneak",
+		"cooldown": 1,
+		"entity_action": {
+			"type": "origins:execute_command",
+			"command": "function regalia:logic/login/awake"
+		}
+	},
+	"key_vieworigin": {
+		"type": "origins:active_self",
+		"key": "key.origins.view_origin",
+		"cooldown": 1,
+		"entity_action": {
+			"type": "origins:execute_command",
+			"command": "function regalia:logic/login/awake"
+		}
+	},
+	"key_use": {
+		"type": "origins:active_self",
+		"key": "key.use",
+		"cooldown": 1,
+		"entity_action": {
+			"type": "origins:execute_command",
+			"command": "function regalia:logic/login/awake"
+		}
+	}
+}

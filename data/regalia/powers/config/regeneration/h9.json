@@ -1,0 +1,17 @@
+{
+  "hidden": true,
+  "type": "origins:action_on_callback",
+  "entity_action_gained": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:heal",
+        "amount": 9
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "function regalia:logic/players/regeneration/finish"
+      }
+    ]
+  }
+}

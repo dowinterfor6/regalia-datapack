@@ -1,0 +1,30 @@
+{
+  "sends_telemetry_event": false,
+  "display": {
+    "icon": {
+      "item": "origins:orb_of_origin"
+    },
+    "title": [
+      [{"text":"Element Affinities"}]
+    ],
+    "description": [
+      [{"text":"Complete challenges and grow a bound towards the Elements.","color":"gray"}]
+    ],
+    "frame": "task",
+    "background": "minecraft:textures/block/sand.png",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+	  "exist": {
+	    "trigger": "minecraft:location",
+      "conditions": {}
+	  }
+  },
+  "requirements": [
+    [
+	    "exist"
+	  ]
+  ]
+}

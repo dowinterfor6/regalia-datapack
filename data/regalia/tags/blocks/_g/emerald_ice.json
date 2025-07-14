@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "betterend:ancient_emerald_ice", "required": false },
+    { "id": "betterend:dense_emerald_ice", "required": false },
+    { "id": "betterend:emerald_ice", "required": false }
+  ]
+}

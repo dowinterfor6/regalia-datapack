@@ -1,0 +1,12 @@
+{
+  "name": "Average",
+  "description": "The default stature.",
+  "icon": "minecraft:glass",
+  "powers": [
+    "regalia:s_average/config",
+    "regalia:s_average/attributes"
+  ],
+  "order": 4,
+  "impact": 0,
+  "unchoosable": false
+}

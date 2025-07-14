@@ -1,0 +1,48 @@
+{
+  "name": "Short Stature",
+  "description": "Short stats.",
+  "type": "origins:multiple",
+  "attributes": {
+    "type": "origins:attribute",
+    "modifiers": [
+      {
+        "attribute": "minecraft:generic.attack_damage",
+        "operation": "multiply_total",
+        "value": -0.1
+      },
+      {
+        "attribute": "minecraft:generic.attack_speed",
+        "operation": "multiply_total",
+        "value": 0.25
+      },
+      {
+        "attribute": "minecraft:generic.knockback_resistance",
+        "operation": "multiply_total",
+        "value": -0.25
+      },
+      {
+        "attribute": "minecraft:generic.movement_speed",
+        "operation": "multiply_total",
+        "value": -0.1
+      }
+    ]
+  },
+  "mining": {
+    "type": "origins:modify_break_speed",
+    "modifiers": [
+      {
+        "operation": "multiply_total_multiplicative",
+        "value": -0.25
+      }
+    ]
+  },
+  "swimming": {
+    "type": "origins:modify_swim_speed",
+    "modifiers": [
+      {
+        "operation": "multiply_total",
+        "value": -0.1
+      }
+    ]
+  }
+}

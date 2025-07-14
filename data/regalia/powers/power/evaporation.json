@@ -1,0 +1,57 @@
+{
+  "name": "Evaporation",
+  "description": "When in hot conditions, steam will randomly levitate you.",
+  "type": "origins:action_over_time",
+  "interval": 5,
+  "rising_action": {
+    "type": "origins:execute_command",
+    "command": "function regalia:logic/power/evaporation/toggle/enable"
+  },
+  "falling_action": {
+    "type": "origins:execute_command",
+    "command": "function regalia:logic/power/evaporation/toggle/disable"
+  },
+  "condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:fluid_height",
+        "fluid": "minecraft:water",
+        "comparison": "==",
+        "compare_to": 0.0
+      },
+      {
+        "type": "origins:in_rain",
+        "inverted": true
+      },
+      {
+        "type": "origins:or",
+        "conditions": [
+          {
+            "type": "origins:dimension",
+            "dimension": "minecraft:the_nether"
+          },
+          {
+            "type": "origins:and",
+            "conditions": [
+              {
+                "type": "origins:biome",
+                  "condition": {
+                  "type": "origins:in_tag",
+                  "tag": "regalia:is_hot"
+                }
+              },
+              {
+                "type": "origins:daytime"
+              },
+              {
+                "type": "origins:dimension",
+                "dimension": "minecraft:overworld"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

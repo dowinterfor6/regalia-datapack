@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "betterend:blossom_berry", "required": false },
+    { "id": "betterend:end_fish_raw", "required": false },
+    { "id": "betterend:amber_root_raw", "required": false },
+    { "id": "betterend:chorus_mushroom_raw", "required": false },
+    { "id": "betterend:shadow_berry_raw", "required": false },
+    { "id": "betternether:black_apple", "required": false },
+    { "id": "rusticdelight:baked_potato_slices", "required": false },
+    { "id": "rusticdelight:cooked_calamari_slice", "required": false },
+    { "id": "rusticdelight:fried_dough", "required": false },
+    { "id": "spawn:roasted_sunflower_seeds", "required": false },
+    { "id": "yungscavebiomes:prickly_peach", "required": false }
+  ]
+}

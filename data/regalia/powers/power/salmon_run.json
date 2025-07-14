@@ -1,0 +1,91 @@
+{
+  "name": "Salmon Run [30⌛]",
+  "description": "§e[Key] = 'Primary Power'§r\nGain 30 seconds of Dolphin's Grace.",
+  "type": "origins:multiple",
+  "data_cooldown": {
+    "type": "origins:resource",
+    "min": -1,
+    "max": 600,
+    "start_value": 0,
+    "hud_render": {
+      "should_render": true,
+      "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+      "bar_index": 15,
+      "inverted": true,
+      "condition": {
+        "type": "origins:resource",
+        "resource": "regalia:power/salmon_run_data_cooldown",
+        "comparison": ">=",
+        "compare_to": 1
+      }
+    }
+  },
+  "trigger": {
+    "type": "origins:active_self",
+    "key": {
+      "key": "key.origins.primary_active"
+    },
+    "cooldown": 5,
+    "entity_action": {
+      "type": "origins:if_else_list",
+      "actions": [
+        {
+          "action": {
+            "type": "origins:execute_command",
+            "command": "function regalia:logic/power/_g/fail"
+          },
+          "condition": {
+            "type": "origins:resource",
+            "resource": "regalia:power/salmon_run_data_cooldown",
+            "comparison": "==",
+            "compare_to": 0,
+            "inverted": true
+          }
+        },
+        {
+          "action": {
+            "type": "origins:execute_command",
+            "command": "function regalia:logic/power/_g/already"
+          },
+          "condition": {
+            "type": "origins:status_effect",
+            "effect": "minecraft:dolphins_grace"
+          }
+        },
+        {
+          "action": {
+            "type": "origins:execute_command",
+            "command": "function regalia:logic/power/salmon_run/trigger"
+          },
+          "condition": {
+            "type": "origins:resource",
+            "resource": "regalia:power/salmon_run_data_cooldown",
+            "comparison": "==",
+            "compare_to": 0
+          }
+        }
+      ]
+    }
+  },
+  "tick_cooldown": {
+    "type": "origins:action_over_time",
+    "interval": 1,
+    "entity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:change_resource",
+          "resource": "regalia:power/salmon_run_data_cooldown",
+          "operation": "add",
+          "change": -1
+        }
+      ]
+    },
+    "condition": {
+      "type": "origins:resource",
+      "resource": "regalia:power/salmon_run_data_cooldown",
+      "comparison": ">=",
+      "compare_to": 1
+    }
+  }
+}

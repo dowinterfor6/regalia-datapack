@@ -1,0 +1,27 @@
+{
+  "name": "Smothered",
+  "description": "Your Melee attacks become weaker when wet.",
+  "type": "origins:conditioned_attribute",
+  "modifiers": [
+    {
+      "attribute": "minecraft:generic.attack_damage",
+      "operation": "multiply_total",
+      "value": -0.5
+    }
+  ],
+  "condition": {
+    "type": "origins:or",
+    "conditions": [
+      {
+        "type": "origins:fluid_height",
+        "fluid": "minecraft:water",
+        "comparison": "==",
+        "compare_to": 0.0,
+        "inverted": true
+      },
+      {
+        "type": "origins:in_rain"
+      }
+    ]
+  }
+}
