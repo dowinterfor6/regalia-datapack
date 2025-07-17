@@ -3,7 +3,8 @@
 scoreboard players operation $version.b rga.settings = $version.a rga.settings
 
 # system
-execute unless score $debug rga.settings matches 0.. run scoreboard players set $debug rga.settings 0
+# execute unless score $debug rga.settings matches 0.. run scoreboard players set $debug rga.settings 0
+scoreboard players set $debug rga.settings 1
 
 # blocks
 execute unless score $ice.tick_rate rga.settings matches 0.. run scoreboard players set $ice.tick_rate rga.settings 50

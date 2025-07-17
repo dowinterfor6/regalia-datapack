@@ -16,3 +16,13 @@ scoreboard players operation @s rga.food.meal.regeneration = $calc.food.regenera
 # calls
 power grant @s regalia:food/p/meal regalia:food/prevent
 function regalia:logic/food/incoming/apply
+
+# update ui
+execute if score @s rga.food.meal.tick matches 1200 run effect give @s regaliafood:meal 60 0 true
+execute if score @s rga.food.meal.tick matches 6000 run effect give @s regaliafood:meal 300 0 true
+execute if score @s rga.food.meal.tick matches 12000 run effect give @s regaliafood:meal 600 0 true
+execute if score @s rga.food.meal.tick matches 24000 run effect give @s regaliafood:meal 1200 0 true
+execute if score @s rga.food.meal.tick matches 36000 run effect give @s regaliafood:meal 1800 0 true
+execute if score @s rga.food.meal.tick matches 72000 run effect give @s regaliafood:meal 3600 0 true
+execute if score @s rga.food.meal.tick matches 108000 run effect give @s regaliafood:meal 5400 0 true
+execute if score @s rga.food.meal.tick matches 144000 run effect give @s regaliafood:meal 7200 0 true
