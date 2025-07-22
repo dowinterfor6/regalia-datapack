@@ -1,4 +1,5 @@
 ## regeneration - delay
+tell @s config/regeneration/delay.mcfunction called
 # base
 scoreboard players set @s rga.config.regeneration.delay 200
 

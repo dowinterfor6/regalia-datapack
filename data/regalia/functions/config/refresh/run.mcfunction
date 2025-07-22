@@ -1,4 +1,5 @@
 ## config - refresh/run
+tell @s config/refresh/run.mcfunction called
 # prepare
 execute if score $debug rga.settings matches 1 run tellraw @s [{"text":" [D> ","color":"yellow"},{"text":"CONFIG: Refreshing.","color":"gray"}]
 scoreboard players reset @s rga.config.refresh

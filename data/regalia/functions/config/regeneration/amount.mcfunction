@@ -1,4 +1,5 @@
 ## regeneration - amount
+tell @s config/regen/amount.mcfunction called
 # base
 scoreboard players set @s rga.config.regeneration.amount 1
 

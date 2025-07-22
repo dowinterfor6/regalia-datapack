@@ -1,4 +1,5 @@
 ## config - refresh/main
+tell @s config/refresh/_m.mcfunction called
 # checks
 execute unless score @s rga.config.refresh matches 0.. run return 0
 # tick

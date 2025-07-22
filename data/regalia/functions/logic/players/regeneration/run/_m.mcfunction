@@ -2,6 +2,7 @@
 # reset
 execute if score @s rga.regeneration.status matches 1 run scoreboard players operation @s rga.regeneration.tick = @s rga.config.regeneration.delay
 execute if score @s rga.regeneration.status matches 0 run scoreboard players reset @s rga.regeneration.tick
+execute if score @s rga.config.regeneration.amount matches 0 run say config regen amount is 0, not regenning
 # heal
 execute if score @s rga.config.regeneration.amount matches 1..7 run function regalia:logic/players/regeneration/run/1_7
 execute if score @s rga.config.regeneration.amount matches 8..14 run function regalia:logic/players/regeneration/run/8_14
